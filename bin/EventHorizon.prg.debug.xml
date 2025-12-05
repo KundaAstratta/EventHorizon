@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/bin/gen/006-B4260-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="3" lineNum="5" parent="globals/EventHorizonApp" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="4" lineNum="8" parent="globals/EventHorizonView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="5" lineNum="12" parent="globals/EventHorizonApp" pc="268435525" symbol="onStart"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="6" lineNum="20" parent="globals/EventHorizonApp" pc="268435528" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="6" lineNum="21" parent="globals/EventHorizonApp" pc="268435530" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="7" lineNum="7" parent="globals/EventHorizonApp" pc="268435556" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="7" lineNum="8" parent="globals/EventHorizonApp" pc="268435558" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonApp.mc" id="8" lineNum="16" parent="globals/EventHorizonApp" pc="268435571" symbol="onStop"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="9" lineNum="342" parent="globals/EventHorizonView" pc="268435574" symbol="onExitSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="9" lineNum="343" parent="globals/EventHorizonView" pc="268435576" symbol="onExitSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="9" lineNum="344" parent="globals/EventHorizonView" pc="268435584" symbol="onExitSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="60" parent="globals/EventHorizonView" pc="268435596" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="62" parent="globals/EventHorizonView" pc="268435599" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="74" parent="globals/EventHorizonView" pc="268435606" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="75" parent="globals/EventHorizonView" pc="268435616" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="78" parent="globals/EventHorizonView" pc="268435625" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="79" parent="globals/EventHorizonView" pc="268435639" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="80" parent="globals/EventHorizonView" pc="268435652" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="10" lineNum="81" parent="globals/EventHorizonView" pc="268435669" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="11" lineNum="23" parent="globals/EventHorizonView" pc="268435702" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="11" lineNum="24" parent="globals/EventHorizonView" pc="268435704" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="11" lineNum="25" parent="globals/EventHorizonView" pc="268435721" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="11" lineNum="26" parent="globals/EventHorizonView" pc="268435738" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="12" lineNum="116" parent="globals/EventHorizonView" pc="268435776" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="12" lineNum="128" parent="globals/EventHorizonView" pc="268435779" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="12" lineNum="129" parent="globals/EventHorizonView" pc="268435788" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="296" parent="globals/EventHorizonView" pc="268435798" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="297" parent="globals/EventHorizonView" pc="268435801" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="301" parent="globals/EventHorizonView" pc="268435815" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="302" parent="globals/EventHorizonView" pc="268435831" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="305" parent="globals/EventHorizonView" pc="268435847" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="306" parent="globals/EventHorizonView" pc="268435860" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="309" parent="globals/EventHorizonView" pc="268435873" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="310" parent="globals/EventHorizonView" pc="268435877" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="311" parent="globals/EventHorizonView" pc="268435890" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="314" parent="globals/EventHorizonView" pc="268435903" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="315" parent="globals/EventHorizonView" pc="268435928" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="316" parent="globals/EventHorizonView" pc="268435953" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="317" parent="globals/EventHorizonView" pc="268435978" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="319" parent="globals/EventHorizonView" pc="268436003" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="326" parent="globals/EventHorizonView" pc="268436077" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="329" parent="globals/EventHorizonView" pc="268436089" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="330" parent="globals/EventHorizonView" pc="268436102" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="13" lineNum="331" parent="globals/EventHorizonView" pc="268436114" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="264" parent="globals/EventHorizonView" pc="268436139" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="265" parent="globals/EventHorizonView" pc="268436142" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="266" parent="globals/EventHorizonView" pc="268436154" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="267" parent="globals/EventHorizonView" pc="268436162" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="268" parent="globals/EventHorizonView" pc="268436170" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="271" parent="globals/EventHorizonView" pc="268436178" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="272" parent="globals/EventHorizonView" pc="268436212" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="273" parent="globals/EventHorizonView" pc="268436237" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="277" parent="globals/EventHorizonView" pc="268436262" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="280" parent="globals/EventHorizonView" pc="268436284" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="284" parent="globals/EventHorizonView" pc="268436306" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="285" parent="globals/EventHorizonView" pc="268436312" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="286" parent="globals/EventHorizonView" pc="268436316" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="287" parent="globals/EventHorizonView" pc="268436341" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="289" parent="globals/EventHorizonView" pc="268436366" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="290" parent="globals/EventHorizonView" pc="268436383" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="291" parent="globals/EventHorizonView" pc="268436395" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="14" lineNum="292" parent="globals/EventHorizonView" pc="268436419" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="15" lineNum="337" parent="globals/EventHorizonView" pc="268436439" symbol="onEnterSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="15" lineNum="338" parent="globals/EventHorizonView" pc="268436441" symbol="onEnterSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="15" lineNum="339" parent="globals/EventHorizonView" pc="268436449" symbol="onEnterSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="164" parent="globals/EventHorizonView" pc="268436461" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="165" parent="globals/EventHorizonView" pc="268436464" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="166" parent="globals/EventHorizonView" pc="268436481" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="181" parent="globals/EventHorizonView" pc="268436493" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="184" parent="globals/EventHorizonView" pc="268436500" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="185" parent="globals/EventHorizonView" pc="268436516" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="186" parent="globals/EventHorizonView" pc="268436523" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="188" parent="globals/EventHorizonView" pc="268436533" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="189" parent="globals/EventHorizonView" pc="268436545" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="190" parent="globals/EventHorizonView" pc="268436561" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="193" parent="globals/EventHorizonView" pc="268436583" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="194" parent="globals/EventHorizonView" pc="268436611" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="198" parent="globals/EventHorizonView" pc="268436639" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="199" parent="globals/EventHorizonView" pc="268436652" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="206" parent="globals/EventHorizonView" pc="268436665" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="218" parent="globals/EventHorizonView" pc="268436787" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="219" parent="globals/EventHorizonView" pc="268436829" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="220" parent="globals/EventHorizonView" pc="268436871" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="221" parent="globals/EventHorizonView" pc="268436913" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="224" parent="globals/EventHorizonView" pc="268436955" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="225" parent="globals/EventHorizonView" pc="268436997" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="226" parent="globals/EventHorizonView" pc="268437039" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="227" parent="globals/EventHorizonView" pc="268437081" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="230" parent="globals/EventHorizonView" pc="268437123" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="231" parent="globals/EventHorizonView" pc="268437162" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="236" parent="globals/EventHorizonView" pc="268437201" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="237" parent="globals/EventHorizonView" pc="268437218" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="238" parent="globals/EventHorizonView" pc="268437230" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="239" parent="globals/EventHorizonView" pc="268437243" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="241" parent="globals/EventHorizonView" pc="268437247" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="244" parent="globals/EventHorizonView" pc="268437258" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="244" parent="globals/EventHorizonView" pc="268437274" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="246" parent="globals/EventHorizonView" pc="268437280" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="247" parent="globals/EventHorizonView" pc="268437305" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="248" parent="globals/EventHorizonView" pc="268437330" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="249" parent="globals/EventHorizonView" pc="268437355" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="250" parent="globals/EventHorizonView" pc="268437383" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="16" lineNum="252" parent="globals/EventHorizonView" pc="268437411" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="85" parent="globals/EventHorizonView" pc="268437440" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="86" parent="globals/EventHorizonView" pc="268437443" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="89" parent="globals/EventHorizonView" pc="268437460" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="90" parent="globals/EventHorizonView" pc="268437465" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="91" parent="globals/EventHorizonView" pc="268437474" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="95" parent="globals/EventHorizonView" pc="268437483" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="97" parent="globals/EventHorizonView" pc="268437487" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="99" parent="globals/EventHorizonView" pc="268437498" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="100" parent="globals/EventHorizonView" pc="268437519" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="103" parent="globals/EventHorizonView" pc="268437526" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="104" parent="globals/EventHorizonView" pc="268437547" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="108" parent="globals/EventHorizonView" pc="268437554" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="109" parent="globals/EventHorizonView" pc="268437575" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="17" lineNum="111" parent="globals/EventHorizonView" pc="268437595" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="18" lineNum="19" parent="globals/EventHorizonView" pc="268437622" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="18" lineNum="20" parent="globals/EventHorizonView" pc="268437624" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="20" lineNum="256" parent="globals/EventHorizonView" pc="268437637" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawLogo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="20" lineNum="257" parent="globals/EventHorizonView" pc="268437639" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawLogo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="30" parent="globals/EventHorizonView" pc="268437657" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="32" parent="globals/EventHorizonView" pc="268437659" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="33" parent="globals/EventHorizonView" pc="268437671" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="35" parent="globals/EventHorizonView" pc="268437679" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="37" parent="globals/EventHorizonView" pc="268437687" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="38" parent="globals/EventHorizonView" pc="268437699" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="42" parent="globals/EventHorizonView" pc="268437703" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="43" parent="globals/EventHorizonView" pc="268437714" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="47" parent="globals/EventHorizonView" pc="268437725" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="50" parent="globals/EventHorizonView" pc="268437736" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="53" parent="globals/EventHorizonView" pc="268437747" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/source/EventHorizonView.mc" id="21" lineNum="56" parent="globals/EventHorizonView" pc="268437758" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/bin/gen/006-B4260-00/source/Rez.mcgen" id="22" lineNum="13" parent="globals/Rez/Layouts" pc="268437771" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/bin/gen/006-B4260-00/source/Rez.mcgen" id="22" lineNum="14" parent="globals/Rez/Layouts" pc="268437782" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/EventHorizon/bin/gen/006-B4260-00/source/Rez.mcgen" id="22" lineNum="16" parent="globals/Rez/Layouts" pc="268437898" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="19" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="25" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="14" symbol="&lt;globals/EventHorizonView/&lt;&gt;_radius&gt;"/>
+        <entry id="22" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry id="6" object="true" symbol="EventHorizonApp"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="11" symbol="&lt;globals/EventHorizonView/&lt;&gt;_electricBlue&gt;"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="18" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="7" object="true" symbol="EventHorizonView"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="20" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;"/>
+        <entry field="true" id="16" symbol="&lt;globals/EventHorizonView/&lt;&gt;_shieldColor&gt;"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="17" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="24" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="13" symbol="&lt;globals/EventHorizonView/&lt;&gt;_isInSleepMode&gt;"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry field="true" id="10" symbol="&lt;globals/EventHorizonView/&lt;&gt;_centerY&gt;"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="12" symbol="&lt;globals/EventHorizonView/&lt;&gt;_handColor&gt;"/>
+        <entry field="true" id="9" symbol="&lt;globals/EventHorizonView/&lt;&gt;_centerX&gt;"/>
+        <entry field="true" id="15" symbol="&lt;globals/EventHorizonView/&lt;&gt;_secondHandColor&gt;"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="21" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawLogo&gt;"/>
+        <entry id="8" module="true" symbol="Layouts"/>
+        <entry id="23" method="true" symbol="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435701" name="dc" stackId="1" startPc="268435596"/>
+        <entry endPc="268435700" name="colors" stackId="2" startPc="268435599"/>
+        <entry endPc="268435700" name="maxRadius" stackId="3" startPc="268435599"/>
+        <entry endPc="268435700" name="numRings" stackId="4" startPc="268435599"/>
+        <entry endPc="268435700" name="i" stackId="5" startPc="268435639"/>
+        <entry endPc="268435690" name="ringRadius" stackId="6" startPc="268435639"/>
+        <entry arg="true" endPc="268435775" name="dc" stackId="1" startPc="268435702"/>
+        <entry arg="true" endPc="268435797" name="dc" stackId="1" startPc="268435776"/>
+        <entry endPc="268435796" name="width" stackId="2" startPc="268435779"/>
+        <entry endPc="268435796" name="height" stackId="3" startPc="268435779"/>
+        <entry arg="true" endPc="268436138" name="dc" stackId="1" startPc="268435798"/>
+        <entry arg="true" endPc="268436138" name="angle" stackId="2" startPc="268435798"/>
+        <entry arg="true" endPc="268436138" name="length" stackId="3" startPc="268435798"/>
+        <entry arg="true" endPc="268436138" name="width" stackId="4" startPc="268435798"/>
+        <entry arg="true" endPc="268436138" name="color" stackId="5" startPc="268435798"/>
+        <entry endPc="268436137" name="cos" stackId="6" startPc="268435801"/>
+        <entry endPc="268436137" name="sin" stackId="7" startPc="268435801"/>
+        <entry endPc="268436137" name="xTip" stackId="8" startPc="268435801"/>
+        <entry endPc="268436137" name="yTip" stackId="9" startPc="268435801"/>
+        <entry endPc="268436137" name="backLen" stackId="10" startPc="268435801"/>
+        <entry endPc="268436137" name="xBack" stackId="11" startPc="268435801"/>
+        <entry endPc="268436137" name="yBack" stackId="12" startPc="268435801"/>
+        <entry endPc="268436137" name="xSide1" stackId="13" startPc="268435801"/>
+        <entry endPc="268436137" name="ySide1" stackId="14" startPc="268435801"/>
+        <entry endPc="268436137" name="xSide2" stackId="15" startPc="268435801"/>
+        <entry endPc="268436137" name="ySide2" stackId="16" startPc="268435801"/>
+        <entry endPc="268436137" name="points" stackId="17" startPc="268435801"/>
+        <entry arg="true" endPc="268436438" name="dc" stackId="1" startPc="268436139"/>
+        <entry arg="true" endPc="268436438" name="inSleep" stackId="2" startPc="268436139"/>
+        <entry endPc="268436437" name="clockTime" stackId="3" startPc="268436142"/>
+        <entry endPc="268436437" name="hour" stackId="4" startPc="268436142"/>
+        <entry endPc="268436437" name="min" stackId="5" startPc="268436142"/>
+        <entry endPc="268436437" name="sec" stackId="6" startPc="268436142"/>
+        <entry endPc="268436437" name="hourAngle" stackId="7" startPc="268436142"/>
+        <entry endPc="268436437" name="minAngle" stackId="8" startPc="268436142"/>
+        <entry endPc="268436437" name="secAngle" stackId="9" startPc="268436142"/>
+        <entry endPc="268436434" name="secRadius" stackId="10" startPc="268436312"/>
+        <entry endPc="268436434" name="x" stackId="11" startPc="268436312"/>
+        <entry endPc="268436434" name="y" stackId="12" startPc="268436312"/>
+        <entry arg="true" endPc="268437439" name="dc" stackId="1" startPc="268436461"/>
+        <entry endPc="268437438" name="r" stackId="2" startPc="268436464"/>
+        <entry endPc="268437438" name="circleX" stackId="3" startPc="268436464"/>
+        <entry endPc="268437438" name="circleY" stackId="4" startPc="268436464"/>
+        <entry endPc="268437438" name="circleRadius" stackId="5" startPc="268436464"/>
+        <entry endPc="268437438" name="startX" stackId="6" startPc="268436464"/>
+        <entry endPc="268437438" name="startY" stackId="7" startPc="268436464"/>
+        <entry endPc="268437438" name="topPts" stackId="8" startPc="268436464"/>
+        <entry endPc="268437438" name="markerRadius" stackId="9" startPc="268436464"/>
+        <entry endPc="268437438" name="markerLen" stackId="10" startPc="268436464"/>
+        <entry endPc="268437438" name="i" stackId="11" startPc="268437258"/>
+        <entry endPc="268437428" name="angle" stackId="12" startPc="268437258"/>
+        <entry endPc="268437428" name="x1" stackId="13" startPc="268437258"/>
+        <entry endPc="268437428" name="y1" stackId="14" startPc="268437258"/>
+        <entry endPc="268437428" name="x2" stackId="15" startPc="268437258"/>
+        <entry endPc="268437428" name="y2" stackId="16" startPc="268437258"/>
+        <entry arg="true" endPc="268437621" name="dc" stackId="1" startPc="268437440"/>
+        <entry endPc="268437620" name="numStars" stackId="2" startPc="268437443"/>
+        <entry endPc="268437620" name="width" stackId="3" startPc="268437443"/>
+        <entry endPc="268437620" name="height" stackId="4" startPc="268437443"/>
+        <entry endPc="268437620" name="seed" stackId="5" startPc="268437443"/>
+        <entry endPc="268437620" name="i" stackId="6" startPc="268437498"/>
+        <entry endPc="268437610" name="x" stackId="7" startPc="268437498"/>
+        <entry endPc="268437610" name="y" stackId="8" startPc="268437498"/>
+        <entry endPc="268437610" name="size" stackId="9" startPc="268437498"/>
+        <entry arg="true" endPc="268437656" name="dc" stackId="1" startPc="268437637"/>
+        <entry arg="true" endPc="268437770" name="dc" stackId="1" startPc="268437657"/>
+        <entry arg="true" endPc="268437907" name="dc" stackId="1" startPc="268437771"/>
+        <entry endPc="268437907" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268437782"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4260-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="125" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/EventHorizonApp" offset="178" parentId="globals" symbolId="EventHorizonApp" type="class"/>
+        <dataEntry label="globals/EventHorizonView" offset="249" parentId="globals" symbolId="EventHorizonView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="473" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="508" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="543" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="EventHorizonApp" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="EventHorizonView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="EventHorizonApp" startPc="268435525">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435555" name="getInitialView" parent="EventHorizonApp" startPc="268435528">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435570" name="initialize" parent="EventHorizonApp" startPc="268435556">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435573" name="onStop" parent="EventHorizonApp" startPc="268435571">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435595" name="onExitSleep" parent="EventHorizonView" startPc="268435574">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435701" name="&lt;globals/EventHorizonView/&lt;&gt;drawConcentricBackground&gt;" parent="EventHorizonView" startPc="268435596">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435775" name="onLayout" parent="EventHorizonView" startPc="268435702">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435797" name="&lt;globals/EventHorizonView/&lt;&gt;drawShieldBackground&gt;" parent="EventHorizonView" startPc="268435776">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436138" name="&lt;globals/EventHorizonView/&lt;&gt;drawDauphineHand&gt;" parent="EventHorizonView" startPc="268435798">
+            <param id="dc"/>
+            <param id="angle"/>
+            <param id="length"/>
+            <param id="width"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436438" name="&lt;globals/EventHorizonView/&lt;&gt;drawHands&gt;" parent="EventHorizonView" startPc="268436139">
+            <param id="dc"/>
+            <param id="inSleep"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436460" name="onEnterSleep" parent="EventHorizonView" startPc="268436439">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437439" name="&lt;globals/EventHorizonView/&lt;&gt;drawCircuitLines&gt;" parent="EventHorizonView" startPc="268436461">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437621" name="&lt;globals/EventHorizonView/&lt;&gt;drawStarField&gt;" parent="EventHorizonView" startPc="268437440">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437636" name="initialize" parent="EventHorizonView" startPc="268437622">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="EventHorizonView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437656" name="&lt;globals/EventHorizonView/&lt;&gt;drawLogo&gt;" parent="EventHorizonView" startPc="268437637">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437770" name="onUpdate" parent="EventHorizonView" startPc="268437657">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437907" name="WatchFace" parent="Layouts" startPc="268437771">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

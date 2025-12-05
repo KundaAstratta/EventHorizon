@@ -1,0 +1,1372 @@
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [System,3,14,20]; ]
+import Toybox.System;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Time,5,14,18]; @symbol_importdef<2> = [Gregorian,5,19,28]; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Math,6,14,18]; ]
+import Toybox.Math;
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 8; @symbol_classdef = [HamiltonVenturaView,8,6,25]; @symbol_extends<0> = [WatchUi,8,34,41]; @symbol_extends<1> = [WatchFace,8,42,51]; ]
+class HamiltonVenturaView extends WatchUi.WatchFace {
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 10; @position = 16; @symbol_vardef = [_centerX,10,16,24]; @symbol_type<0> = [Number,10,28,34]; ]
+    private
+    var _centerX as Number = 0;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 11; @position = 16; @symbol_vardef = [_centerY,11,16,24]; @symbol_type<0> = [Number,11,28,34]; ]
+    private
+    var _centerY as Number = 0;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 12; @position = 16; @symbol_vardef = [_electricBlue,12,16,29]; @symbol_type<0> = [Number,12,33,39]; ]
+    private
+    var _electricBlue as Number = 0x00FFFF;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 13; @position = 16; @symbol_vardef = [_shieldColor,13,16,28]; @symbol_type<0> = [Number,13,32,38]; ]
+    private
+    var _shieldColor as Number = 0x000000;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 14; @position = 16; @symbol_vardef = [_handColor,14,16,26]; @symbol_type<0> = [Number,14,30,36]; ]
+    private
+    var _handColor as Number = 0xAAAAAA;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 15; @position = 16; @symbol_vardef = [_secondHandColor,15,16,32]; @symbol_type<0> = [Number,15,36,42]; ]
+    private
+    var _secondHandColor as Number = 0x00FFFF;
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    function initialize() as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_17_26_19_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 18 8 ]
+        symbol [ WatchFace %tmp.2 18 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 18 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_17_26_19_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 21; @symbol_functiondef = [onLayout,21,13,21]; @symbol_param<0> = [dc,21,22,24]; @symbol_param<0>_type<0> = [Dc,21,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_21_40_24_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 22 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 22 19 21 ];
+        symbol [ getWidth %tmp.2 22 22 30 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        symbol [ _centerX ? 22 8 16 ];
+        putv self :_centerX %tmp.5;
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 23 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 23 19 21 ];
+        symbol [ getHeight %tmp.7 23 22 31 ];
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 2;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        symbol [ _centerY ? 23 8 16 ];
+        putv self :_centerY %tmp.10;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_21_40_24_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 26; @symbol_functiondef = [onUpdate,26,13,21]; @symbol_param<0> = [dc,26,22,24]; @symbol_param<0>_type<0> = [Dc,26,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_26_40_42_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 28 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 28 8 10 ];
+        symbol [ setColor %tmp.2 28 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 28 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 28 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 28 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 28 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 29 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 29 8 10 ];
+        symbol [ clear %tmp.8 29 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 32 8 ]
+        %tmp.9 = self;
+        symbol [ drawShieldBackground %tmp.10 32 8 28 ];
+        %tmp.10 = getv function %tmp.9 :drawShieldBackground;
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 32 29 31 ];
+        invoke %tmp.9 %tmp.10(%tmp.11);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 35 8 ]
+        %tmp.12 = self;
+        symbol [ drawCircuitLines %tmp.13 35 8 24 ];
+        %tmp.13 = getv function %tmp.12 :drawCircuitLines;
+        %tmp.14 = lgetv %dc;
+        symbol [ dc %tmp.14 35 25 27 ];
+        invoke %tmp.12 %tmp.13(%tmp.14);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 38 8 ]
+        %tmp.15 = self;
+        symbol [ drawLogo %tmp.16 38 8 16 ];
+        %tmp.16 = getv function %tmp.15 :drawLogo;
+        %tmp.17 = lgetv %dc;
+        symbol [ dc %tmp.17 38 17 19 ];
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 41 8 ]
+        %tmp.18 = self;
+        symbol [ drawHands %tmp.19 41 8 17 ];
+        %tmp.19 = getv function %tmp.18 :drawHands;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 41 18 20 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_26_40_42_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 44; @symbol_functiondef = [drawShieldBackground,44,21,41]; @symbol_param<0> = [dc,44,42,44]; @symbol_param<0>_type<0> = [Dc,44,48,50]; ]
+    private
+    function drawShieldBackground(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 56 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 56 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 56 20 22 ];
+        symbol [ getWidth %tmp.2 56 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 56 12 17 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 57 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 57 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 57 21 23 ];
+        symbol [ getHeight %tmp.5 57 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 57 12 18 ];
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_44_60_90_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 92; @symbol_functiondef = [drawCircuitLines,92,21,37]; @symbol_param<0> = [dc,92,38,40]; @symbol_param<0>_type<0> = [Dc,92,44,46]; ]
+    private
+    function drawCircuitLines(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 93 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 93 8 10 ];
+        symbol [ setColor %tmp.2 93 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ _electricBlue %tmp.4 93 20 33 ];
+        %tmp.4 = getv ? :_electricBlue;
+        symbol [ Graphics %tmp.5 93 35 43 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 93 44 61 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 94 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 94 8 10 ];
+        symbol [ setPenWidth %tmp.8 94 11 22 ];
+        %tmp.8 = getv function %tmp.7 :setPenWidth;
+        %tmp.9 = 3;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 109 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %r.1 = local;
+        symbol [ r %r.1 109 12 13 ];
+        symbol [ _centerX %tmp.11 109 16 24 ];
+        %tmp.11 = getv ? :_centerX;
+        lputv %r.1 %tmp.11;
+        symbol [ r %r.1 109 12 13 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 112 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %circleX.2 = local;
+        symbol [ circleX %circleX.2 112 12 19 ];
+        symbol [ _centerX %tmp.13 112 22 30 ];
+        %tmp.13 = getv ? :_centerX;
+        %tmp.14 = lgetv %r.1;
+        symbol [ r %tmp.14 112 33 34 ];
+        %tmp.15 = 0.5;
+        %tmp.16 = mul %tmp.14 %tmp.15;
+        %tmp.17 = sub %tmp.13 %tmp.16;
+        lputv %circleX.2 %tmp.17;
+        symbol [ circleX %circleX.2 112 12 19 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 113 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %circleY.3 = local;
+        symbol [ circleY %circleY.3 113 12 19 ];
+        symbol [ _centerY %tmp.19 113 22 30 ];
+        %tmp.19 = getv ? :_centerY;
+        lputv %circleY.3 %tmp.19;
+        symbol [ circleY %circleY.3 113 12 19 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 114 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %circleRadius.4 = local;
+        symbol [ circleRadius %circleRadius.4 114 12 24 ];
+        %tmp.20 = lgetv %r.1;
+        symbol [ r %tmp.20 114 27 28 ];
+        %tmp.21 = 0.15;
+        %tmp.22 = mul %tmp.20 %tmp.21;
+        lputv %circleRadius.4 %tmp.22;
+        symbol [ circleRadius %circleRadius.4 114 12 24 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 116 8 ]
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 116 8 10 ];
+        symbol [ setPenWidth %tmp.24 116 11 22 ];
+        %tmp.24 = getv function %tmp.23 :setPenWidth;
+        %tmp.25 = 3;
+        invoke %tmp.23 %tmp.24(%tmp.25);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 117 8 ]
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 117 8 10 ];
+        symbol [ drawCircle %tmp.27 117 11 21 ];
+        %tmp.27 = getv function %tmp.26 :drawCircle;
+        %tmp.28 = lgetv %circleX.2;
+        symbol [ circleX %tmp.28 117 22 29 ];
+        %tmp.29 = lgetv %circleY.3;
+        symbol [ circleY %tmp.29 117 31 38 ];
+        %tmp.30 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.30 117 40 52 ];
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.30);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 118 8 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 118 8 10 ];
+        symbol [ fillCircle %tmp.32 118 11 21 ];
+        %tmp.32 = getv function %tmp.31 :fillCircle;
+        %tmp.33 = lgetv %circleX.2;
+        symbol [ circleX %tmp.33 118 22 29 ];
+        %tmp.34 = lgetv %circleY.3;
+        symbol [ circleY %tmp.34 118 31 38 ];
+        %tmp.35 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.35 118 40 52 ];
+        %tmp.36 = 0.4;
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.37);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 121 8 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 121 8 10 ];
+        symbol [ drawArc %tmp.39 121 11 18 ];
+        %tmp.39 = getv function %tmp.38 :drawArc;
+        %tmp.40 = lgetv %circleX.2;
+        symbol [ circleX %tmp.40 121 19 26 ];
+        %tmp.41 = lgetv %circleY.3;
+        symbol [ circleY %tmp.41 121 28 35 ];
+        %tmp.42 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.42 121 37 49 ];
+        %tmp.43 = 1.5;
+        %tmp.44 = mul %tmp.42 %tmp.43;
+        symbol [ Graphics %tmp.45 121 57 65 ];
+        %tmp.45 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.46 121 66 87 ];
+        %tmp.46 = getv %tmp.45 :ARC_COUNTER_CLOCKWISE;
+        %tmp.47 = 270;
+        %tmp.48 = 90;
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.44, %tmp.46, %tmp.47, %tmp.48);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 122 8 ]
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 122 8 10 ];
+        symbol [ drawArc %tmp.50 122 11 18 ];
+        %tmp.50 = getv function %tmp.49 :drawArc;
+        %tmp.51 = lgetv %circleX.2;
+        symbol [ circleX %tmp.51 122 19 26 ];
+        %tmp.52 = lgetv %circleY.3;
+        symbol [ circleY %tmp.52 122 28 35 ];
+        %tmp.53 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.53 122 37 49 ];
+        %tmp.54 = 2.0;
+        %tmp.55 = mul %tmp.53 %tmp.54;
+        symbol [ Graphics %tmp.56 122 57 65 ];
+        %tmp.56 = getm $.Toybox.Graphics;
+        symbol [ ARC_COUNTER_CLOCKWISE %tmp.57 122 66 87 ];
+        %tmp.57 = getv %tmp.56 :ARC_COUNTER_CLOCKWISE;
+        %tmp.58 = 250;
+        %tmp.59 = 110;
+        invoke %tmp.49 %tmp.50(%tmp.51, %tmp.52, %tmp.55, %tmp.57, %tmp.58, %tmp.59);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 126 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %startX.5 = local;
+        symbol [ startX %startX.5 126 12 18 ];
+        %tmp.60 = lgetv %circleX.2;
+        symbol [ circleX %tmp.60 126 21 28 ];
+        %tmp.61 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.61 126 31 43 ];
+        %tmp.62 = 1.5;
+        %tmp.63 = mul %tmp.61 %tmp.62;
+        %tmp.64 = add %tmp.60 %tmp.63;
+        lputv %startX.5 %tmp.64;
+        symbol [ startX %startX.5 126 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 127 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %startY.6 = local;
+        symbol [ startY %startY.6 127 12 18 ];
+        %tmp.65 = lgetv %circleY.3;
+        symbol [ circleY %tmp.65 127 21 28 ];
+        %tmp.66 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.66 127 31 43 ];
+        %tmp.67 = 1.0;
+        %tmp.68 = mul %tmp.66 %tmp.67;
+        %tmp.69 = sub %tmp.65 %tmp.68;
+        lputv %startY.6 %tmp.69;
+        symbol [ startY %startY.6 127 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 134 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %topPts.7 = local;
+        symbol [ topPts %topPts.7 134 12 18 ];
+        %tmp.70 = newa 4;
+        %tmp.71 = newa 2;
+        symbol [ _centerX %tmp.73 135 14 22 ];
+        %tmp.73 = getv ? :_centerX;
+        %tmp.74 = 40;
+        %tmp.75 = sub %tmp.73 %tmp.74;
+        %tmp.76 = dup %tmp.71;
+        %tmp.77 = aputv %tmp.76 0 %tmp.75;
+        symbol [ _centerY %tmp.79 135 31 39 ];
+        %tmp.79 = getv ? :_centerY;
+        %tmp.80 = 10;
+        %tmp.81 = sub %tmp.79 %tmp.80;
+        %tmp.82 = dup %tmp.77;
+        %tmp.83 = aputv %tmp.82 1 %tmp.81;
+        %tmp.84 = dup %tmp.70;
+        %tmp.85 = aputv %tmp.84 0 %tmp.83;
+        %tmp.86 = newa 2;
+        symbol [ _centerX %tmp.88 136 14 22 ];
+        %tmp.88 = getv ? :_centerX;
+        %tmp.89 = 20;
+        %tmp.90 = sub %tmp.88 %tmp.89;
+        %tmp.91 = dup %tmp.86;
+        %tmp.92 = aputv %tmp.91 0 %tmp.90;
+        symbol [ _centerY %tmp.94 136 31 39 ];
+        %tmp.94 = getv ? :_centerY;
+        %tmp.95 = 60;
+        %tmp.96 = sub %tmp.94 %tmp.95;
+        %tmp.97 = dup %tmp.92;
+        %tmp.98 = aputv %tmp.97 1 %tmp.96;
+        %tmp.99 = dup %tmp.85;
+        %tmp.100 = aputv %tmp.99 1 %tmp.98;
+        %tmp.101 = newa 2;
+        symbol [ _centerX %tmp.103 137 14 22 ];
+        %tmp.103 = getv ? :_centerX;
+        %tmp.104 = 60;
+        %tmp.105 = add %tmp.103 %tmp.104;
+        %tmp.106 = dup %tmp.101;
+        %tmp.107 = aputv %tmp.106 0 %tmp.105;
+        symbol [ _centerY %tmp.109 137 31 39 ];
+        %tmp.109 = getv ? :_centerY;
+        %tmp.110 = 50;
+        %tmp.111 = sub %tmp.109 %tmp.110;
+        %tmp.112 = dup %tmp.107;
+        %tmp.113 = aputv %tmp.112 1 %tmp.111;
+        %tmp.114 = dup %tmp.100;
+        %tmp.115 = aputv %tmp.114 2 %tmp.113;
+        %tmp.116 = newa 2;
+        symbol [ _centerX %tmp.118 138 14 22 ];
+        %tmp.118 = getv ? :_centerX;
+        %tmp.119 = 80;
+        %tmp.120 = add %tmp.118 %tmp.119;
+        %tmp.121 = dup %tmp.116;
+        %tmp.122 = aputv %tmp.121 0 %tmp.120;
+        symbol [ _centerY %tmp.124 138 31 39 ];
+        %tmp.124 = getv ? :_centerY;
+        %tmp.125 = 10;
+        %tmp.126 = sub %tmp.124 %tmp.125;
+        %tmp.127 = dup %tmp.122;
+        %tmp.128 = aputv %tmp.127 1 %tmp.126;
+        %tmp.129 = dup %tmp.115;
+        %tmp.130 = aputv %tmp.129 3 %tmp.128;
+        lputv %topPts.7 %tmp.130;
+        symbol [ topPts %topPts.7 134 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 146 8 ]
+        %tmp.131 = lgetv %dc;
+        symbol [ dc %tmp.131 146 8 10 ];
+        symbol [ drawLine %tmp.132 146 11 19 ];
+        %tmp.132 = getv function %tmp.131 :drawLine;
+        symbol [ _centerX %tmp.134 146 20 28 ];
+        %tmp.134 = getv ? :_centerX;
+        %tmp.135 = 50;
+        %tmp.136 = sub %tmp.134 %tmp.135;
+        symbol [ _centerY %tmp.138 146 35 43 ];
+        %tmp.138 = getv ? :_centerY;
+        %tmp.139 = 15;
+        %tmp.140 = sub %tmp.138 %tmp.139;
+        symbol [ _centerX %tmp.142 146 50 58 ];
+        %tmp.142 = getv ? :_centerX;
+        %tmp.143 = 40;
+        %tmp.144 = sub %tmp.142 %tmp.143;
+        symbol [ _centerY %tmp.146 146 65 73 ];
+        %tmp.146 = getv ? :_centerY;
+        %tmp.147 = 60;
+        %tmp.148 = sub %tmp.146 %tmp.147;
+        invoke %tmp.131 %tmp.132(%tmp.136, %tmp.140, %tmp.144, %tmp.148);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 147 8 ]
+        %tmp.149 = lgetv %dc;
+        symbol [ dc %tmp.149 147 8 10 ];
+        symbol [ drawLine %tmp.150 147 11 19 ];
+        %tmp.150 = getv function %tmp.149 :drawLine;
+        symbol [ _centerX %tmp.152 147 20 28 ];
+        %tmp.152 = getv ? :_centerX;
+        %tmp.153 = 40;
+        %tmp.154 = sub %tmp.152 %tmp.153;
+        symbol [ _centerY %tmp.156 147 35 43 ];
+        %tmp.156 = getv ? :_centerY;
+        %tmp.157 = 60;
+        %tmp.158 = sub %tmp.156 %tmp.157;
+        symbol [ _centerX %tmp.160 147 50 58 ];
+        %tmp.160 = getv ? :_centerX;
+        %tmp.161 = 60;
+        %tmp.162 = add %tmp.160 %tmp.161;
+        symbol [ _centerY %tmp.164 147 65 73 ];
+        %tmp.164 = getv ? :_centerY;
+        %tmp.165 = 50;
+        %tmp.166 = sub %tmp.164 %tmp.165;
+        invoke %tmp.149 %tmp.150(%tmp.154, %tmp.158, %tmp.162, %tmp.166);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 148 8 ]
+        %tmp.167 = lgetv %dc;
+        symbol [ dc %tmp.167 148 8 10 ];
+        symbol [ drawLine %tmp.168 148 11 19 ];
+        %tmp.168 = getv function %tmp.167 :drawLine;
+        symbol [ _centerX %tmp.170 148 20 28 ];
+        %tmp.170 = getv ? :_centerX;
+        %tmp.171 = 60;
+        %tmp.172 = add %tmp.170 %tmp.171;
+        symbol [ _centerY %tmp.174 148 35 43 ];
+        %tmp.174 = getv ? :_centerY;
+        %tmp.175 = 50;
+        %tmp.176 = sub %tmp.174 %tmp.175;
+        symbol [ _centerX %tmp.178 148 50 58 ];
+        %tmp.178 = getv ? :_centerX;
+        %tmp.179 = 50;
+        %tmp.180 = add %tmp.178 %tmp.179;
+        symbol [ _centerY %tmp.182 148 65 73 ];
+        %tmp.182 = getv ? :_centerY;
+        %tmp.183 = 15;
+        %tmp.184 = sub %tmp.182 %tmp.183;
+        invoke %tmp.167 %tmp.168(%tmp.172, %tmp.176, %tmp.180, %tmp.184);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 149 8 ]
+        %tmp.185 = lgetv %dc;
+        symbol [ dc %tmp.185 149 8 10 ];
+        symbol [ drawLine %tmp.186 149 11 19 ];
+        %tmp.186 = getv function %tmp.185 :drawLine;
+        symbol [ _centerX %tmp.188 149 20 28 ];
+        %tmp.188 = getv ? :_centerX;
+        %tmp.189 = 50;
+        %tmp.190 = add %tmp.188 %tmp.189;
+        symbol [ _centerY %tmp.192 149 35 43 ];
+        %tmp.192 = getv ? :_centerY;
+        %tmp.193 = 15;
+        %tmp.194 = sub %tmp.192 %tmp.193;
+        symbol [ _centerX %tmp.196 149 50 58 ];
+        %tmp.196 = getv ? :_centerX;
+        %tmp.197 = 50;
+        %tmp.198 = sub %tmp.196 %tmp.197;
+        symbol [ _centerY %tmp.200 149 65 73 ];
+        %tmp.200 = getv ? :_centerY;
+        %tmp.201 = 15;
+        %tmp.202 = sub %tmp.200 %tmp.201;
+        invoke %tmp.185 %tmp.186(%tmp.190, %tmp.194, %tmp.198, %tmp.202);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 152 8 ]
+        %tmp.203 = lgetv %dc;
+        symbol [ dc %tmp.203 152 8 10 ];
+        symbol [ drawLine %tmp.204 152 11 19 ];
+        %tmp.204 = getv function %tmp.203 :drawLine;
+        symbol [ _centerX %tmp.206 152 20 28 ];
+        %tmp.206 = getv ? :_centerX;
+        %tmp.207 = 50;
+        %tmp.208 = sub %tmp.206 %tmp.207;
+        symbol [ _centerY %tmp.210 152 35 43 ];
+        %tmp.210 = getv ? :_centerY;
+        %tmp.211 = 15;
+        %tmp.212 = add %tmp.210 %tmp.211;
+        symbol [ _centerX %tmp.214 152 50 58 ];
+        %tmp.214 = getv ? :_centerX;
+        %tmp.215 = 40;
+        %tmp.216 = sub %tmp.214 %tmp.215;
+        symbol [ _centerY %tmp.218 152 65 73 ];
+        %tmp.218 = getv ? :_centerY;
+        %tmp.219 = 60;
+        %tmp.220 = add %tmp.218 %tmp.219;
+        invoke %tmp.203 %tmp.204(%tmp.208, %tmp.212, %tmp.216, %tmp.220);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 153 8 ]
+        %tmp.221 = lgetv %dc;
+        symbol [ dc %tmp.221 153 8 10 ];
+        symbol [ drawLine %tmp.222 153 11 19 ];
+        %tmp.222 = getv function %tmp.221 :drawLine;
+        symbol [ _centerX %tmp.224 153 20 28 ];
+        %tmp.224 = getv ? :_centerX;
+        %tmp.225 = 40;
+        %tmp.226 = sub %tmp.224 %tmp.225;
+        symbol [ _centerY %tmp.228 153 35 43 ];
+        %tmp.228 = getv ? :_centerY;
+        %tmp.229 = 60;
+        %tmp.230 = add %tmp.228 %tmp.229;
+        symbol [ _centerX %tmp.232 153 50 58 ];
+        %tmp.232 = getv ? :_centerX;
+        %tmp.233 = 60;
+        %tmp.234 = add %tmp.232 %tmp.233;
+        symbol [ _centerY %tmp.236 153 65 73 ];
+        %tmp.236 = getv ? :_centerY;
+        %tmp.237 = 50;
+        %tmp.238 = add %tmp.236 %tmp.237;
+        invoke %tmp.221 %tmp.222(%tmp.226, %tmp.230, %tmp.234, %tmp.238);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 154 8 ]
+        %tmp.239 = lgetv %dc;
+        symbol [ dc %tmp.239 154 8 10 ];
+        symbol [ drawLine %tmp.240 154 11 19 ];
+        %tmp.240 = getv function %tmp.239 :drawLine;
+        symbol [ _centerX %tmp.242 154 20 28 ];
+        %tmp.242 = getv ? :_centerX;
+        %tmp.243 = 60;
+        %tmp.244 = add %tmp.242 %tmp.243;
+        symbol [ _centerY %tmp.246 154 35 43 ];
+        %tmp.246 = getv ? :_centerY;
+        %tmp.247 = 50;
+        %tmp.248 = add %tmp.246 %tmp.247;
+        symbol [ _centerX %tmp.250 154 50 58 ];
+        %tmp.250 = getv ? :_centerX;
+        %tmp.251 = 50;
+        %tmp.252 = add %tmp.250 %tmp.251;
+        symbol [ _centerY %tmp.254 154 65 73 ];
+        %tmp.254 = getv ? :_centerY;
+        %tmp.255 = 15;
+        %tmp.256 = add %tmp.254 %tmp.255;
+        invoke %tmp.239 %tmp.240(%tmp.244, %tmp.248, %tmp.252, %tmp.256);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 155 8 ]
+        %tmp.257 = lgetv %dc;
+        symbol [ dc %tmp.257 155 8 10 ];
+        symbol [ drawLine %tmp.258 155 11 19 ];
+        %tmp.258 = getv function %tmp.257 :drawLine;
+        symbol [ _centerX %tmp.260 155 20 28 ];
+        %tmp.260 = getv ? :_centerX;
+        %tmp.261 = 50;
+        %tmp.262 = add %tmp.260 %tmp.261;
+        symbol [ _centerY %tmp.264 155 35 43 ];
+        %tmp.264 = getv ? :_centerY;
+        %tmp.265 = 15;
+        %tmp.266 = add %tmp.264 %tmp.265;
+        symbol [ _centerX %tmp.268 155 50 58 ];
+        %tmp.268 = getv ? :_centerX;
+        %tmp.269 = 50;
+        %tmp.270 = sub %tmp.268 %tmp.269;
+        symbol [ _centerY %tmp.272 155 65 73 ];
+        %tmp.272 = getv ? :_centerY;
+        %tmp.273 = 15;
+        %tmp.274 = add %tmp.272 %tmp.273;
+        invoke %tmp.257 %tmp.258(%tmp.262, %tmp.266, %tmp.270, %tmp.274);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 158 8 ]
+        %tmp.275 = lgetv %dc;
+        symbol [ dc %tmp.275 158 8 10 ];
+        symbol [ drawLine %tmp.276 158 11 19 ];
+        %tmp.276 = getv function %tmp.275 :drawLine;
+        symbol [ _centerX %tmp.278 158 20 28 ];
+        %tmp.278 = getv ? :_centerX;
+        %tmp.279 = 50;
+        %tmp.280 = sub %tmp.278 %tmp.279;
+        symbol [ _centerY %tmp.282 158 35 43 ];
+        %tmp.282 = getv ? :_centerY;
+        %tmp.283 = 15;
+        %tmp.284 = sub %tmp.282 %tmp.283;
+        %tmp.285 = lgetv %circleX.2;
+        symbol [ circleX %tmp.285 158 50 57 ];
+        %tmp.286 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.286 158 60 72 ];
+        %tmp.287 = add %tmp.285 %tmp.286;
+        symbol [ _centerY %tmp.289 158 74 82 ];
+        %tmp.289 = getv ? :_centerY;
+        %tmp.290 = 5;
+        %tmp.291 = sub %tmp.289 %tmp.290;
+        invoke %tmp.275 %tmp.276(%tmp.280, %tmp.284, %tmp.287, %tmp.291);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 159 8 ]
+        %tmp.292 = lgetv %dc;
+        symbol [ dc %tmp.292 159 8 10 ];
+        symbol [ drawLine %tmp.293 159 11 19 ];
+        %tmp.293 = getv function %tmp.292 :drawLine;
+        symbol [ _centerX %tmp.295 159 20 28 ];
+        %tmp.295 = getv ? :_centerX;
+        %tmp.296 = 50;
+        %tmp.297 = sub %tmp.295 %tmp.296;
+        symbol [ _centerY %tmp.299 159 35 43 ];
+        %tmp.299 = getv ? :_centerY;
+        %tmp.300 = 15;
+        %tmp.301 = add %tmp.299 %tmp.300;
+        %tmp.302 = lgetv %circleX.2;
+        symbol [ circleX %tmp.302 159 50 57 ];
+        %tmp.303 = lgetv %circleRadius.4;
+        symbol [ circleRadius %tmp.303 159 60 72 ];
+        %tmp.304 = add %tmp.302 %tmp.303;
+        symbol [ _centerY %tmp.306 159 74 82 ];
+        %tmp.306 = getv ? :_centerY;
+        %tmp.307 = 5;
+        %tmp.308 = add %tmp.306 %tmp.307;
+        invoke %tmp.292 %tmp.293(%tmp.297, %tmp.301, %tmp.304, %tmp.308);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 164 8 ]
+        %tmp.309 = lgetv %dc;
+        symbol [ dc %tmp.309 164 8 10 ];
+        symbol [ setColor %tmp.310 164 11 19 ];
+        %tmp.310 = getv function %tmp.309 :setColor;
+        symbol [ Graphics %tmp.311 164 20 28 ];
+        %tmp.311 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.312 164 29 40 ];
+        %tmp.312 = getv %tmp.311 :COLOR_WHITE;
+        symbol [ Graphics %tmp.313 164 42 50 ];
+        %tmp.313 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.314 164 51 68 ];
+        %tmp.314 = getv %tmp.313 :COLOR_TRANSPARENT;
+        invoke %tmp.309 %tmp.310(%tmp.312, %tmp.314);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 165 8 ]
+        %tmp.315 = lgetv %dc;
+        symbol [ dc %tmp.315 165 8 10 ];
+        symbol [ setPenWidth %tmp.316 165 11 22 ];
+        %tmp.316 = getv function %tmp.315 :setPenWidth;
+        %tmp.317 = 2;
+        invoke %tmp.315 %tmp.316(%tmp.317);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 166 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %markerRadius.8 = local;
+        symbol [ markerRadius %markerRadius.8 166 12 24 ];
+        symbol [ _centerX %tmp.319 166 27 35 ];
+        %tmp.319 = getv ? :_centerX;
+        %tmp.320 = 0.9;
+        %tmp.321 = mul %tmp.319 %tmp.320;
+        lputv %markerRadius.8 %tmp.321;
+        symbol [ markerRadius %markerRadius.8 166 12 24 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 167 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop" ]
+        %markerLen.9 = local;
+        symbol [ markerLen %markerLen.9 167 12 21 ];
+        %tmp.322 = 15;
+        lputv %markerLen.9 %tmp.322;
+        symbol [ markerLen %markerLen.9 167 12 21 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 169 8 ]
+        for @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_test @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_incr @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_end;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_init:
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_begin" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_end" ]
+        %i.10 = local;
+        symbol [ i %i.10 169 17 18 ];
+        %tmp.323 = 0;
+        lputv %i.10 %tmp.323;
+        symbol [ i %i.10 169 17 18 ];
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_test:
+        %tmp.324 = lgetv %i.10;
+        symbol [ i %tmp.324 169 24 25 ];
+        %tmp.325 = 12;
+        %tmp.326 = lt %tmp.324 %tmp.325;
+        bf %tmp.326 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_end;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_begin:
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 172 12 ]
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_stmt:
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_16_172_31_begin:
+        %tmp.327 = lgetv %i.10;
+        symbol [ i %tmp.327 172 16 17 ];
+        %tmp.328 = 3;
+        %tmp.329 = eq %tmp.327 %tmp.328;
+        bt %tmp.329 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_true;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_26_172_31_false:
+        %tmp.330 = lgetv %i.10;
+        symbol [ i %tmp.330 172 26 27 ];
+        %tmp.331 = 9;
+        %tmp.332 = eq %tmp.330 %tmp.331;
+        push %tmp.332;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_26_172_31_end:
+        %tmp.333 = phi [%tmp.329 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_16_172_31_begin] [%tmp.332 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_26_172_31_false] [%tmp.333 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_26_172_31_end];
+        bf %tmp.333 @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_end;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_true:
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_34_172_46_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 172 36 ]
+        goto break @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_incr;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_34_172_46_stop:
+        goto @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_end;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_172_12_172_46_if_end:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 174 12 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop" ]
+        %angle.11 = local;
+        symbol [ angle %angle.11 174 16 21 ];
+        %tmp.334 = lgetv %i.10;
+        symbol [ i %tmp.334 174 25 26 ];
+        %tmp.335 = 12.0;
+        %tmp.336 = div %tmp.334 %tmp.335;
+        symbol [ Math %tmp.337 174 37 41 ];
+        %tmp.337 = getm $.Toybox.Math;
+        symbol [ PI %tmp.338 174 42 44 ];
+        %tmp.338 = getv %tmp.337 :PI;
+        %tmp.339 = mul %tmp.336 %tmp.338;
+        %tmp.340 = 2;
+        %tmp.341 = mul %tmp.339 %tmp.340;
+        symbol [ Math %tmp.342 174 51 55 ];
+        %tmp.342 = getm $.Toybox.Math;
+        symbol [ PI %tmp.343 174 56 58 ];
+        %tmp.343 = getv %tmp.342 :PI;
+        %tmp.344 = 2;
+        %tmp.345 = div %tmp.343 %tmp.344;
+        %tmp.346 = sub %tmp.341 %tmp.345;
+        lputv %angle.11 %tmp.346;
+        symbol [ angle %angle.11 174 16 21 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 175 12 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop" ]
+        %x1.12 = local;
+        symbol [ x1 %x1.12 175 16 18 ];
+        symbol [ _centerX %tmp.348 175 21 29 ];
+        %tmp.348 = getv ? :_centerX;
+        %tmp.349 = lgetv %markerRadius.8;
+        symbol [ markerRadius %tmp.349 175 32 44 ];
+        symbol [ Math %tmp.350 175 47 51 ];
+        %tmp.350 = getm $.Toybox.Math;
+        symbol [ cos %tmp.351 175 52 55 ];
+        %tmp.351 = getv function %tmp.350 :cos;
+        %tmp.352 = lgetv %angle.11;
+        symbol [ angle %tmp.352 175 56 61 ];
+        %tmp.353 = invoke %tmp.350 %tmp.351(%tmp.352);
+        %tmp.354 = mul %tmp.349 %tmp.353;
+        %tmp.355 = add %tmp.348 %tmp.354;
+        lputv %x1.12 %tmp.355;
+        symbol [ x1 %x1.12 175 16 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 176 12 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop" ]
+        %y1.13 = local;
+        symbol [ y1 %y1.13 176 16 18 ];
+        symbol [ _centerY %tmp.357 176 21 29 ];
+        %tmp.357 = getv ? :_centerY;
+        %tmp.358 = lgetv %markerRadius.8;
+        symbol [ markerRadius %tmp.358 176 32 44 ];
+        symbol [ Math %tmp.359 176 47 51 ];
+        %tmp.359 = getm $.Toybox.Math;
+        symbol [ sin %tmp.360 176 52 55 ];
+        %tmp.360 = getv function %tmp.359 :sin;
+        %tmp.361 = lgetv %angle.11;
+        symbol [ angle %tmp.361 176 56 61 ];
+        %tmp.362 = invoke %tmp.359 %tmp.360(%tmp.361);
+        %tmp.363 = mul %tmp.358 %tmp.362;
+        %tmp.364 = add %tmp.357 %tmp.363;
+        lputv %y1.13 %tmp.364;
+        symbol [ y1 %y1.13 176 16 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 177 12 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop" ]
+        %x2.14 = local;
+        symbol [ x2 %x2.14 177 16 18 ];
+        symbol [ _centerX %tmp.366 177 21 29 ];
+        %tmp.366 = getv ? :_centerX;
+        %tmp.367 = lgetv %markerRadius.8;
+        symbol [ markerRadius %tmp.367 177 33 45 ];
+        %tmp.368 = lgetv %markerLen.9;
+        symbol [ markerLen %tmp.368 177 48 57 ];
+        %tmp.369 = sub %tmp.367 %tmp.368;
+        symbol [ Math %tmp.370 177 61 65 ];
+        %tmp.370 = getm $.Toybox.Math;
+        symbol [ cos %tmp.371 177 66 69 ];
+        %tmp.371 = getv function %tmp.370 :cos;
+        %tmp.372 = lgetv %angle.11;
+        symbol [ angle %tmp.372 177 70 75 ];
+        %tmp.373 = invoke %tmp.370 %tmp.371(%tmp.372);
+        %tmp.374 = mul %tmp.369 %tmp.373;
+        %tmp.375 = add %tmp.366 %tmp.374;
+        lputv %x2.14 %tmp.375;
+        symbol [ x2 %x2.14 177 16 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 178 12 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop" ]
+        %y2.15 = local;
+        symbol [ y2 %y2.15 178 16 18 ];
+        symbol [ _centerY %tmp.377 178 21 29 ];
+        %tmp.377 = getv ? :_centerY;
+        %tmp.378 = lgetv %markerRadius.8;
+        symbol [ markerRadius %tmp.378 178 33 45 ];
+        %tmp.379 = lgetv %markerLen.9;
+        symbol [ markerLen %tmp.379 178 48 57 ];
+        %tmp.380 = sub %tmp.378 %tmp.379;
+        symbol [ Math %tmp.381 178 61 65 ];
+        %tmp.381 = getm $.Toybox.Math;
+        symbol [ sin %tmp.382 178 66 69 ];
+        %tmp.382 = getv function %tmp.381 :sin;
+        %tmp.383 = lgetv %angle.11;
+        symbol [ angle %tmp.383 178 70 75 ];
+        %tmp.384 = invoke %tmp.381 %tmp.382(%tmp.383);
+        %tmp.385 = mul %tmp.380 %tmp.384;
+        %tmp.386 = add %tmp.377 %tmp.385;
+        lputv %y2.15 %tmp.386;
+        symbol [ y2 %y2.15 178 16 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 180 12 ]
+        %tmp.387 = lgetv %dc;
+        symbol [ dc %tmp.387 180 12 14 ];
+        symbol [ drawLine %tmp.388 180 15 23 ];
+        %tmp.388 = getv function %tmp.387 :drawLine;
+        %tmp.389 = lgetv %x1.12;
+        symbol [ x1 %tmp.389 180 24 26 ];
+        %tmp.390 = lgetv %y1.13;
+        symbol [ y1 %tmp.390 180 28 30 ];
+        %tmp.391 = lgetv %x2.14;
+        symbol [ x2 %tmp.391 180 32 34 ];
+        %tmp.392 = lgetv %y2.15;
+        symbol [ y2 %tmp.392 180 36 38 ];
+        invoke %tmp.387 %tmp.388(%tmp.389, %tmp.390, %tmp.391, %tmp.392);
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_37_181_8_stop:
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_incr:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 169 ]
+        %tmp.395 = lgetv %i.10;
+        symbol [ i %tmp.395 169 32 33 ];
+        %tmp.396 = add %tmp.395 1;
+        lputv %i.10 %tmp.396;
+        symbol [ i %i.10 169 32 33 ];
+        goto @_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_test;
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_169_8_181_8_for_end:
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_92_56_182_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 184; @symbol_functiondef = [drawLogo,184,21,29]; @symbol_param<0> = [dc,184,30,32]; @symbol_param<0>_type<0> = [Dc,184,36,38]; ]
+    private
+    function drawLogo(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_184_48_190_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 185 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 185 8 10 ];
+        symbol [ setColor %tmp.2 185 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 185 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 185 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Graphics %tmp.5 185 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 185 51 68 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_184_48_190_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 192; @symbol_functiondef = [drawHands,192,21,30]; @symbol_param<0> = [dc,192,31,33]; @symbol_param<0>_type<0> = [Dc,192,37,39]; ]
+    private
+    function drawHands(dc as Dc) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 193 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 193 12 21 ];
+        symbol [ System %tmp.1 193 24 30 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 193 31 43 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 193 12 21 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 194 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 194 12 16 ];
+        %tmp.4 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.4 194 19 28 ];
+        symbol [ hour %tmp.5 194 29 33 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        lputv %hour.2 %tmp.5;
+        symbol [ hour %hour.2 194 12 16 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 195 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %min.3 = local;
+        symbol [ min %min.3 195 12 15 ];
+        %tmp.6 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.6 195 18 27 ];
+        symbol [ min %tmp.7 195 28 31 ];
+        %tmp.7 = getv %tmp.6 :min;
+        lputv %min.3 %tmp.7;
+        symbol [ min %min.3 195 12 15 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 196 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %sec.4 = local;
+        symbol [ sec %sec.4 196 12 15 ];
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 196 18 27 ];
+        symbol [ sec %tmp.9 196 28 31 ];
+        %tmp.9 = getv %tmp.8 :sec;
+        lputv %sec.4 %tmp.9;
+        symbol [ sec %sec.4 196 12 15 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 199 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %hourAngle.5 = local;
+        symbol [ hourAngle %hourAngle.5 199 12 21 ];
+        %tmp.10 = lgetv %hour.2;
+        symbol [ hour %tmp.10 199 26 30 ];
+        %tmp.11 = 12;
+        %tmp.12 = mod %tmp.10 %tmp.11;
+        %tmp.13 = 60;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        %tmp.15 = lgetv %min.3;
+        symbol [ min %tmp.15 199 44 47 ];
+        %tmp.16 = add %tmp.14 %tmp.15;
+        %tmp.17 = 12;
+        %tmp.18 = 60.0;
+        %tmp.19 = mul %tmp.17 %tmp.18;
+        %tmp.20 = div %tmp.16 %tmp.19;
+        symbol [ Math %tmp.21 199 65 69 ];
+        %tmp.21 = getm $.Toybox.Math;
+        symbol [ PI %tmp.22 199 70 72 ];
+        %tmp.22 = getv %tmp.21 :PI;
+        %tmp.23 = mul %tmp.20 %tmp.22;
+        %tmp.24 = 2;
+        %tmp.25 = mul %tmp.23 %tmp.24;
+        symbol [ Math %tmp.26 199 79 83 ];
+        %tmp.26 = getm $.Toybox.Math;
+        symbol [ PI %tmp.27 199 84 86 ];
+        %tmp.27 = getv %tmp.26 :PI;
+        %tmp.28 = 2;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        %tmp.30 = sub %tmp.25 %tmp.29;
+        lputv %hourAngle.5 %tmp.30;
+        symbol [ hourAngle %hourAngle.5 199 12 21 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 200 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %minAngle.6 = local;
+        symbol [ minAngle %minAngle.6 200 12 20 ];
+        %tmp.31 = lgetv %min.3;
+        symbol [ min %tmp.31 200 23 26 ];
+        %tmp.32 = 60.0;
+        %tmp.33 = div %tmp.31 %tmp.32;
+        symbol [ Math %tmp.34 200 36 40 ];
+        %tmp.34 = getm $.Toybox.Math;
+        symbol [ PI %tmp.35 200 41 43 ];
+        %tmp.35 = getv %tmp.34 :PI;
+        %tmp.36 = mul %tmp.33 %tmp.35;
+        %tmp.37 = 2;
+        %tmp.38 = mul %tmp.36 %tmp.37;
+        symbol [ Math %tmp.39 200 50 54 ];
+        %tmp.39 = getm $.Toybox.Math;
+        symbol [ PI %tmp.40 200 55 57 ];
+        %tmp.40 = getv %tmp.39 :PI;
+        %tmp.41 = 2;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = sub %tmp.38 %tmp.42;
+        lputv %minAngle.6 %tmp.43;
+        symbol [ minAngle %minAngle.6 200 12 20 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 201 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %secAngle.7 = local;
+        symbol [ secAngle %secAngle.7 201 12 20 ];
+        %tmp.44 = lgetv %sec.4;
+        symbol [ sec %tmp.44 201 23 26 ];
+        %tmp.45 = 60.0;
+        %tmp.46 = div %tmp.44 %tmp.45;
+        symbol [ Math %tmp.47 201 36 40 ];
+        %tmp.47 = getm $.Toybox.Math;
+        symbol [ PI %tmp.48 201 41 43 ];
+        %tmp.48 = getv %tmp.47 :PI;
+        %tmp.49 = mul %tmp.46 %tmp.48;
+        %tmp.50 = 2;
+        %tmp.51 = mul %tmp.49 %tmp.50;
+        symbol [ Math %tmp.52 201 50 54 ];
+        %tmp.52 = getm $.Toybox.Math;
+        symbol [ PI %tmp.53 201 55 57 ];
+        %tmp.53 = getv %tmp.52 :PI;
+        %tmp.54 = 2;
+        %tmp.55 = div %tmp.53 %tmp.54;
+        %tmp.56 = sub %tmp.51 %tmp.55;
+        lputv %secAngle.7 %tmp.56;
+        symbol [ secAngle %secAngle.7 201 12 20 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 205 8 ]
+        %tmp.57 = self;
+        symbol [ drawDauphineHand %tmp.58 205 8 24 ];
+        %tmp.58 = getv function %tmp.57 :drawDauphineHand;
+        %tmp.59 = lgetv %dc;
+        symbol [ dc %tmp.59 205 25 27 ];
+        %tmp.60 = lgetv %hourAngle.5;
+        symbol [ hourAngle %tmp.60 205 29 38 ];
+        %tmp.61 = 60;
+        %tmp.62 = 6;
+        symbol [ _handColor %tmp.64 205 47 57 ];
+        %tmp.64 = getv ? :_handColor;
+        invoke %tmp.57 %tmp.58(%tmp.59, %tmp.60, %tmp.61, %tmp.62, %tmp.64);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 208 8 ]
+        %tmp.65 = self;
+        symbol [ drawDauphineHand %tmp.66 208 8 24 ];
+        %tmp.66 = getv function %tmp.65 :drawDauphineHand;
+        %tmp.67 = lgetv %dc;
+        symbol [ dc %tmp.67 208 25 27 ];
+        %tmp.68 = lgetv %minAngle.6;
+        symbol [ minAngle %tmp.68 208 29 37 ];
+        %tmp.69 = 90;
+        %tmp.70 = 4;
+        symbol [ _handColor %tmp.72 208 46 56 ];
+        %tmp.72 = getv ? :_handColor;
+        invoke %tmp.65 %tmp.66(%tmp.67, %tmp.68, %tmp.69, %tmp.70, %tmp.72);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 212 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %secRadius.8 = local;
+        symbol [ secRadius %secRadius.8 212 12 21 ];
+        %tmp.73 = 90;
+        lputv %secRadius.8 %tmp.73;
+        symbol [ secRadius %secRadius.8 212 12 21 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 213 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %x.9 = local;
+        symbol [ x %x.9 213 12 13 ];
+        symbol [ _centerX %tmp.75 213 16 24 ];
+        %tmp.75 = getv ? :_centerX;
+        %tmp.76 = lgetv %secRadius.8;
+        symbol [ secRadius %tmp.76 213 27 36 ];
+        symbol [ Math %tmp.77 213 39 43 ];
+        %tmp.77 = getm $.Toybox.Math;
+        symbol [ cos %tmp.78 213 44 47 ];
+        %tmp.78 = getv function %tmp.77 :cos;
+        %tmp.79 = lgetv %secAngle.7;
+        symbol [ secAngle %tmp.79 213 48 56 ];
+        %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+        %tmp.81 = mul %tmp.76 %tmp.80;
+        %tmp.82 = add %tmp.75 %tmp.81;
+        lputv %x.9 %tmp.82;
+        symbol [ x %x.9 213 12 13 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 214 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop" ]
+        %y.10 = local;
+        symbol [ y %y.10 214 12 13 ];
+        symbol [ _centerY %tmp.84 214 16 24 ];
+        %tmp.84 = getv ? :_centerY;
+        %tmp.85 = lgetv %secRadius.8;
+        symbol [ secRadius %tmp.85 214 27 36 ];
+        symbol [ Math %tmp.86 214 39 43 ];
+        %tmp.86 = getm $.Toybox.Math;
+        symbol [ sin %tmp.87 214 44 47 ];
+        %tmp.87 = getv function %tmp.86 :sin;
+        %tmp.88 = lgetv %secAngle.7;
+        symbol [ secAngle %tmp.88 214 48 56 ];
+        %tmp.89 = invoke %tmp.86 %tmp.87(%tmp.88);
+        %tmp.90 = mul %tmp.85 %tmp.89;
+        %tmp.91 = add %tmp.84 %tmp.90;
+        lputv %y.10 %tmp.91;
+        symbol [ y %y.10 214 12 13 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 216 8 ]
+        %tmp.92 = lgetv %dc;
+        symbol [ dc %tmp.92 216 8 10 ];
+        symbol [ setColor %tmp.93 216 11 19 ];
+        %tmp.93 = getv function %tmp.92 :setColor;
+        symbol [ Graphics %tmp.94 216 20 28 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.95 216 29 40 ];
+        %tmp.95 = getv %tmp.94 :COLOR_WHITE;
+        symbol [ Graphics %tmp.96 216 42 50 ];
+        %tmp.96 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.97 216 51 68 ];
+        %tmp.97 = getv %tmp.96 :COLOR_TRANSPARENT;
+        invoke %tmp.92 %tmp.93(%tmp.95, %tmp.97);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 217 8 ]
+        %tmp.98 = lgetv %dc;
+        symbol [ dc %tmp.98 217 8 10 ];
+        symbol [ setPenWidth %tmp.99 217 11 22 ];
+        %tmp.99 = getv function %tmp.98 :setPenWidth;
+        %tmp.100 = 2;
+        invoke %tmp.98 %tmp.99(%tmp.100);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 218 8 ]
+        %tmp.101 = lgetv %dc;
+        symbol [ dc %tmp.101 218 8 10 ];
+        symbol [ drawLine %tmp.102 218 11 19 ];
+        %tmp.102 = getv function %tmp.101 :drawLine;
+        symbol [ _centerX %tmp.104 218 20 28 ];
+        %tmp.104 = getv ? :_centerX;
+        symbol [ _centerY %tmp.106 218 30 38 ];
+        %tmp.106 = getv ? :_centerY;
+        %tmp.107 = lgetv %x.9;
+        symbol [ x %tmp.107 218 40 41 ];
+        %tmp.108 = lgetv %y.10;
+        symbol [ y %tmp.108 218 43 44 ];
+        invoke %tmp.101 %tmp.102(%tmp.104, %tmp.106, %tmp.107, %tmp.108);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 219 8 ]
+        %tmp.109 = lgetv %dc;
+        symbol [ dc %tmp.109 219 8 10 ];
+        symbol [ fillCircle %tmp.110 219 11 21 ];
+        %tmp.110 = getv function %tmp.109 :fillCircle;
+        %tmp.111 = lgetv %x.9;
+        symbol [ x %tmp.111 219 22 23 ];
+        %tmp.112 = lgetv %y.10;
+        symbol [ y %tmp.112 219 25 26 ];
+        %tmp.113 = 3;
+        invoke %tmp.109 %tmp.110(%tmp.111, %tmp.112, %tmp.113);
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_192_49_220_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 222; @symbol_functiondef = [drawDauphineHand,222,21,37]; @symbol_param<0> = [dc,222,38,40]; @symbol_param<0>_type<0> = [Dc,222,44,46]; @symbol_param<1> = [angle,222,48,53]; @symbol_param<1>_type<0> = [Float,222,57,62]; @symbol_param<2> = [length,222,64,70]; @symbol_param<2>_type<0> = [Number,222,74,80]; @symbol_param<3> = [width,222,82,87]; @symbol_param<3>_type<0> = [Number,222,91,97]; @symbol_param<4> = [color,222,99,104]; @symbol_param<4>_type<0> = [Number,222,108,114]; ]
+    private
+    function drawDauphineHand(dc as Dc, angle as Float, length as Number, width as Number, color as Number) as Void {
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start:
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 223 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 223 8 10 ];
+        symbol [ setColor %tmp.2 223 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 223 20 25 ];
+        symbol [ Graphics %tmp.4 223 27 35 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 223 36 53 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 227 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %cos.1 = local;
+        symbol [ cos %cos.1 227 12 15 ];
+        symbol [ Math %tmp.6 227 18 22 ];
+        %tmp.6 = getm $.Toybox.Math;
+        symbol [ cos %tmp.7 227 23 26 ];
+        %tmp.7 = getv function %tmp.6 :cos;
+        %tmp.8 = lgetv %angle;
+        symbol [ angle %tmp.8 227 27 32 ];
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        lputv %cos.1 %tmp.9;
+        symbol [ cos %cos.1 227 12 15 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 228 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %sin.2 = local;
+        symbol [ sin %sin.2 228 12 15 ];
+        symbol [ Math %tmp.10 228 18 22 ];
+        %tmp.10 = getm $.Toybox.Math;
+        symbol [ sin %tmp.11 228 23 26 ];
+        %tmp.11 = getv function %tmp.10 :sin;
+        %tmp.12 = lgetv %angle;
+        symbol [ angle %tmp.12 228 27 32 ];
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        lputv %sin.2 %tmp.13;
+        symbol [ sin %sin.2 228 12 15 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 231 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %xTip.3 = local;
+        symbol [ xTip %xTip.3 231 12 16 ];
+        symbol [ _centerX %tmp.15 231 19 27 ];
+        %tmp.15 = getv ? :_centerX;
+        %tmp.16 = lgetv %length;
+        symbol [ length %tmp.16 231 30 36 ];
+        %tmp.17 = lgetv %cos.1;
+        symbol [ cos %tmp.17 231 39 42 ];
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        %tmp.19 = add %tmp.15 %tmp.18;
+        lputv %xTip.3 %tmp.19;
+        symbol [ xTip %xTip.3 231 12 16 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 232 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %yTip.4 = local;
+        symbol [ yTip %yTip.4 232 12 16 ];
+        symbol [ _centerY %tmp.21 232 19 27 ];
+        %tmp.21 = getv ? :_centerY;
+        %tmp.22 = lgetv %length;
+        symbol [ length %tmp.22 232 30 36 ];
+        %tmp.23 = lgetv %sin.2;
+        symbol [ sin %tmp.23 232 39 42 ];
+        %tmp.24 = mul %tmp.22 %tmp.23;
+        %tmp.25 = add %tmp.21 %tmp.24;
+        lputv %yTip.4 %tmp.25;
+        symbol [ yTip %yTip.4 232 12 16 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 235 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %backLen.5 = local;
+        symbol [ backLen %backLen.5 235 12 19 ];
+        %tmp.26 = 15;
+        lputv %backLen.5 %tmp.26;
+        symbol [ backLen %backLen.5 235 12 19 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 236 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %xBack.6 = local;
+        symbol [ xBack %xBack.6 236 12 17 ];
+        symbol [ _centerX %tmp.28 236 20 28 ];
+        %tmp.28 = getv ? :_centerX;
+        %tmp.29 = lgetv %backLen.5;
+        symbol [ backLen %tmp.29 236 31 38 ];
+        %tmp.30 = lgetv %cos.1;
+        symbol [ cos %tmp.30 236 41 44 ];
+        %tmp.31 = mul %tmp.29 %tmp.30;
+        %tmp.32 = sub %tmp.28 %tmp.31;
+        lputv %xBack.6 %tmp.32;
+        symbol [ xBack %xBack.6 236 12 17 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 237 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %yBack.7 = local;
+        symbol [ yBack %yBack.7 237 12 17 ];
+        symbol [ _centerY %tmp.34 237 20 28 ];
+        %tmp.34 = getv ? :_centerY;
+        %tmp.35 = lgetv %backLen.5;
+        symbol [ backLen %tmp.35 237 31 38 ];
+        %tmp.36 = lgetv %sin.2;
+        symbol [ sin %tmp.36 237 41 44 ];
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        %tmp.38 = sub %tmp.34 %tmp.37;
+        lputv %yBack.7 %tmp.38;
+        symbol [ yBack %yBack.7 237 12 17 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 240 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %xSide1.8 = local;
+        symbol [ xSide1 %xSide1.8 240 12 18 ];
+        symbol [ _centerX %tmp.40 240 21 29 ];
+        %tmp.40 = getv ? :_centerX;
+        %tmp.41 = lgetv %width;
+        symbol [ width %tmp.41 240 32 37 ];
+        symbol [ Math %tmp.42 240 40 44 ];
+        %tmp.42 = getm $.Toybox.Math;
+        symbol [ sin %tmp.43 240 45 48 ];
+        %tmp.43 = getv function %tmp.42 :sin;
+        %tmp.44 = lgetv %angle;
+        symbol [ angle %tmp.44 240 49 54 ];
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.46 = mul %tmp.41 %tmp.45;
+        %tmp.47 = add %tmp.40 %tmp.46;
+        lputv %xSide1.8 %tmp.47;
+        symbol [ xSide1 %xSide1.8 240 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 241 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %ySide1.9 = local;
+        symbol [ ySide1 %ySide1.9 241 12 18 ];
+        symbol [ _centerY %tmp.49 241 21 29 ];
+        %tmp.49 = getv ? :_centerY;
+        %tmp.50 = lgetv %width;
+        symbol [ width %tmp.50 241 32 37 ];
+        symbol [ Math %tmp.51 241 40 44 ];
+        %tmp.51 = getm $.Toybox.Math;
+        symbol [ cos %tmp.52 241 45 48 ];
+        %tmp.52 = getv function %tmp.51 :cos;
+        %tmp.53 = lgetv %angle;
+        symbol [ angle %tmp.53 241 49 54 ];
+        %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
+        %tmp.55 = mul %tmp.50 %tmp.54;
+        %tmp.56 = sub %tmp.49 %tmp.55;
+        lputv %ySide1.9 %tmp.56;
+        symbol [ ySide1 %ySide1.9 241 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 242 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %xSide2.10 = local;
+        symbol [ xSide2 %xSide2.10 242 12 18 ];
+        symbol [ _centerX %tmp.58 242 21 29 ];
+        %tmp.58 = getv ? :_centerX;
+        %tmp.59 = lgetv %width;
+        symbol [ width %tmp.59 242 32 37 ];
+        symbol [ Math %tmp.60 242 40 44 ];
+        %tmp.60 = getm $.Toybox.Math;
+        symbol [ sin %tmp.61 242 45 48 ];
+        %tmp.61 = getv function %tmp.60 :sin;
+        %tmp.62 = lgetv %angle;
+        symbol [ angle %tmp.62 242 49 54 ];
+        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+        %tmp.64 = mul %tmp.59 %tmp.63;
+        %tmp.65 = sub %tmp.58 %tmp.64;
+        lputv %xSide2.10 %tmp.65;
+        symbol [ xSide2 %xSide2.10 242 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 243 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %ySide2.11 = local;
+        symbol [ ySide2 %ySide2.11 243 12 18 ];
+        symbol [ _centerY %tmp.67 243 21 29 ];
+        %tmp.67 = getv ? :_centerY;
+        %tmp.68 = lgetv %width;
+        symbol [ width %tmp.68 243 32 37 ];
+        symbol [ Math %tmp.69 243 40 44 ];
+        %tmp.69 = getm $.Toybox.Math;
+        symbol [ cos %tmp.70 243 45 48 ];
+        %tmp.70 = getv function %tmp.69 :cos;
+        %tmp.71 = lgetv %angle;
+        symbol [ angle %tmp.71 243 49 54 ];
+        %tmp.72 = invoke %tmp.69 %tmp.70(%tmp.71);
+        %tmp.73 = mul %tmp.68 %tmp.72;
+        %tmp.74 = add %tmp.67 %tmp.73;
+        lputv %ySide2.11 %tmp.74;
+        symbol [ ySide2 %ySide2.11 243 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 245 8 ]
+        [ "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_start" "_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop" ]
+        %points.12 = local;
+        symbol [ points %points.12 245 12 18 ];
+        %tmp.75 = newa 4;
+        %tmp.76 = newa 2;
+        %tmp.77 = lgetv %xTip.3;
+        symbol [ xTip %tmp.77 246 13 17 ];
+        %tmp.78 = dup %tmp.76;
+        %tmp.79 = aputv %tmp.78 0 %tmp.77;
+        %tmp.80 = lgetv %yTip.4;
+        symbol [ yTip %tmp.80 246 19 23 ];
+        %tmp.81 = dup %tmp.79;
+        %tmp.82 = aputv %tmp.81 1 %tmp.80;
+        %tmp.83 = dup %tmp.75;
+        %tmp.84 = aputv %tmp.83 0 %tmp.82;
+        %tmp.85 = newa 2;
+        %tmp.86 = lgetv %xSide1.8;
+        symbol [ xSide1 %tmp.86 247 13 19 ];
+        %tmp.87 = dup %tmp.85;
+        %tmp.88 = aputv %tmp.87 0 %tmp.86;
+        %tmp.89 = lgetv %ySide1.9;
+        symbol [ ySide1 %tmp.89 247 21 27 ];
+        %tmp.90 = dup %tmp.88;
+        %tmp.91 = aputv %tmp.90 1 %tmp.89;
+        %tmp.92 = dup %tmp.84;
+        %tmp.93 = aputv %tmp.92 1 %tmp.91;
+        %tmp.94 = newa 2;
+        %tmp.95 = lgetv %xBack.6;
+        symbol [ xBack %tmp.95 248 13 18 ];
+        %tmp.96 = dup %tmp.94;
+        %tmp.97 = aputv %tmp.96 0 %tmp.95;
+        %tmp.98 = lgetv %yBack.7;
+        symbol [ yBack %tmp.98 248 20 25 ];
+        %tmp.99 = dup %tmp.97;
+        %tmp.100 = aputv %tmp.99 1 %tmp.98;
+        %tmp.101 = dup %tmp.93;
+        %tmp.102 = aputv %tmp.101 2 %tmp.100;
+        %tmp.103 = newa 2;
+        %tmp.104 = lgetv %xSide2.10;
+        symbol [ xSide2 %tmp.104 249 13 19 ];
+        %tmp.105 = dup %tmp.103;
+        %tmp.106 = aputv %tmp.105 0 %tmp.104;
+        %tmp.107 = lgetv %ySide2.11;
+        symbol [ ySide2 %tmp.107 249 21 27 ];
+        %tmp.108 = dup %tmp.106;
+        %tmp.109 = aputv %tmp.108 1 %tmp.107;
+        %tmp.110 = dup %tmp.102;
+        %tmp.111 = aputv %tmp.110 3 %tmp.109;
+        lputv %points.12 %tmp.111;
+        symbol [ points %points.12 245 12 18 ];
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 252 8 ]
+        %tmp.112 = lgetv %dc;
+        symbol [ dc %tmp.112 252 8 10 ];
+        symbol [ fillPolygon %tmp.113 252 11 22 ];
+        %tmp.113 = getv function %tmp.112 :fillPolygon;
+        %tmp.114 = lgetv %points.12;
+        symbol [ points %tmp.114 252 23 29 ];
+        invoke %tmp.112 %tmp.113(%tmp.114);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 255 8 ]
+        %tmp.115 = lgetv %dc;
+        symbol [ dc %tmp.115 255 8 10 ];
+        symbol [ setColor %tmp.116 255 11 19 ];
+        %tmp.116 = getv function %tmp.115 :setColor;
+        symbol [ Graphics %tmp.117 255 20 28 ];
+        %tmp.117 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.118 255 29 40 ];
+        %tmp.118 = getv %tmp.117 :COLOR_BLACK;
+        symbol [ Graphics %tmp.119 255 42 50 ];
+        %tmp.119 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.120 255 51 68 ];
+        %tmp.120 = getv %tmp.119 :COLOR_TRANSPARENT;
+        invoke %tmp.115 %tmp.116(%tmp.118, %tmp.120);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 256 8 ]
+        %tmp.121 = lgetv %dc;
+        symbol [ dc %tmp.121 256 8 10 ];
+        symbol [ setPenWidth %tmp.122 256 11 22 ];
+        %tmp.122 = getv function %tmp.121 :setPenWidth;
+        %tmp.123 = 1;
+        invoke %tmp.121 %tmp.122(%tmp.123);
+[ "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" 257 8 ]
+        %tmp.124 = lgetv %dc;
+        symbol [ dc %tmp.124 257 8 10 ];
+        symbol [ drawLine %tmp.125 257 11 19 ];
+        %tmp.125 = getv function %tmp.124 :drawLine;
+        symbol [ _centerX %tmp.127 257 20 28 ];
+        %tmp.127 = getv ? :_centerX;
+        symbol [ _centerY %tmp.129 257 30 38 ];
+        %tmp.129 = getv ? :_centerY;
+        %tmp.130 = lgetv %xTip.3;
+        symbol [ xTip %tmp.130 257 40 44 ];
+        %tmp.131 = lgetv %yTip.4;
+        symbol [ yTip %tmp.131 257 46 50 ];
+        invoke %tmp.124 %tmp.125(%tmp.127, %tmp.129, %tmp.130, %tmp.131);
+_Users_christophehumbert_Code_sdkGarminThree_HamiltonVentura_source_HamiltonVenturaView_mc_222_124_258_4_stop:
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 260; @symbol_functiondef = [onHide,260,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 263; @symbol_functiondef = [onEnterSleep,263,13,25]; ]
+    function onEnterSleep() as Void {
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 266; @symbol_functiondef = [onExitSleep,266,13,24]; ]
+    function onExitSleep() as Void {
+    }
+}
+[ @file = "/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc"; @line = 1; ]
+<init> {
+}

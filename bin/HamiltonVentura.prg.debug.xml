@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="2" lineNum="8" parent="globals/HamiltonVenturaView" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/bin/gen/006-B4536-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="4" lineNum="5" parent="globals/HamiltonVenturaApp" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="6" lineNum="21" parent="globals/HamiltonVenturaView" pc="268435525" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="6" lineNum="22" parent="globals/HamiltonVenturaView" pc="268435527" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="6" lineNum="23" parent="globals/HamiltonVenturaView" pc="268435544" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="7" lineNum="44" parent="globals/HamiltonVenturaView" pc="268435562" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="7" lineNum="56" parent="globals/HamiltonVenturaView" pc="268435565" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="7" lineNum="57" parent="globals/HamiltonVenturaView" pc="268435574" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="222" parent="globals/HamiltonVenturaView" pc="268435584" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="223" parent="globals/HamiltonVenturaView" pc="268435587" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="227" parent="globals/HamiltonVenturaView" pc="268435601" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="228" parent="globals/HamiltonVenturaView" pc="268435617" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="231" parent="globals/HamiltonVenturaView" pc="268435633" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="232" parent="globals/HamiltonVenturaView" pc="268435646" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="235" parent="globals/HamiltonVenturaView" pc="268435659" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="236" parent="globals/HamiltonVenturaView" pc="268435663" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="237" parent="globals/HamiltonVenturaView" pc="268435676" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="240" parent="globals/HamiltonVenturaView" pc="268435689" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="241" parent="globals/HamiltonVenturaView" pc="268435714" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="242" parent="globals/HamiltonVenturaView" pc="268435739" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="243" parent="globals/HamiltonVenturaView" pc="268435764" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="245" parent="globals/HamiltonVenturaView" pc="268435789" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="252" parent="globals/HamiltonVenturaView" pc="268435863" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="255" parent="globals/HamiltonVenturaView" pc="268435875" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="256" parent="globals/HamiltonVenturaView" pc="268435888" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="8" lineNum="257" parent="globals/HamiltonVenturaView" pc="268435900" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="192" parent="globals/HamiltonVenturaView" pc="268435925" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="193" parent="globals/HamiltonVenturaView" pc="268435928" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="194" parent="globals/HamiltonVenturaView" pc="268435940" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="195" parent="globals/HamiltonVenturaView" pc="268435948" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="196" parent="globals/HamiltonVenturaView" pc="268435956" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="199" parent="globals/HamiltonVenturaView" pc="268435964" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="200" parent="globals/HamiltonVenturaView" pc="268435998" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="201" parent="globals/HamiltonVenturaView" pc="268436023" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="205" parent="globals/HamiltonVenturaView" pc="268436048" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="208" parent="globals/HamiltonVenturaView" pc="268436070" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="212" parent="globals/HamiltonVenturaView" pc="268436092" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="213" parent="globals/HamiltonVenturaView" pc="268436096" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="214" parent="globals/HamiltonVenturaView" pc="268436121" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="216" parent="globals/HamiltonVenturaView" pc="268436146" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="217" parent="globals/HamiltonVenturaView" pc="268436163" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="218" parent="globals/HamiltonVenturaView" pc="268436175" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="9" lineNum="219" parent="globals/HamiltonVenturaView" pc="268436199" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="92" parent="globals/HamiltonVenturaView" pc="268436216" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="93" parent="globals/HamiltonVenturaView" pc="268436219" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="94" parent="globals/HamiltonVenturaView" pc="268436236" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="109" parent="globals/HamiltonVenturaView" pc="268436248" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="112" parent="globals/HamiltonVenturaView" pc="268436255" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="113" parent="globals/HamiltonVenturaView" pc="268436271" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="114" parent="globals/HamiltonVenturaView" pc="268436278" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="116" parent="globals/HamiltonVenturaView" pc="268436288" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="117" parent="globals/HamiltonVenturaView" pc="268436300" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="118" parent="globals/HamiltonVenturaView" pc="268436316" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="121" parent="globals/HamiltonVenturaView" pc="268436338" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="122" parent="globals/HamiltonVenturaView" pc="268436366" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="126" parent="globals/HamiltonVenturaView" pc="268436394" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="127" parent="globals/HamiltonVenturaView" pc="268436407" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="134" parent="globals/HamiltonVenturaView" pc="268436420" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="146" parent="globals/HamiltonVenturaView" pc="268436542" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="147" parent="globals/HamiltonVenturaView" pc="268436584" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="148" parent="globals/HamiltonVenturaView" pc="268436626" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="149" parent="globals/HamiltonVenturaView" pc="268436668" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="152" parent="globals/HamiltonVenturaView" pc="268436710" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="153" parent="globals/HamiltonVenturaView" pc="268436752" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="154" parent="globals/HamiltonVenturaView" pc="268436794" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="155" parent="globals/HamiltonVenturaView" pc="268436836" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="158" parent="globals/HamiltonVenturaView" pc="268436878" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="159" parent="globals/HamiltonVenturaView" pc="268436917" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="164" parent="globals/HamiltonVenturaView" pc="268436956" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="165" parent="globals/HamiltonVenturaView" pc="268436973" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="166" parent="globals/HamiltonVenturaView" pc="268436985" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="167" parent="globals/HamiltonVenturaView" pc="268436998" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="169" parent="globals/HamiltonVenturaView" pc="268437002" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="172" parent="globals/HamiltonVenturaView" pc="268437013" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="172" parent="globals/HamiltonVenturaView" pc="268437029" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="174" parent="globals/HamiltonVenturaView" pc="268437035" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="175" parent="globals/HamiltonVenturaView" pc="268437060" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="176" parent="globals/HamiltonVenturaView" pc="268437085" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="177" parent="globals/HamiltonVenturaView" pc="268437110" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="178" parent="globals/HamiltonVenturaView" pc="268437138" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="11" lineNum="180" parent="globals/HamiltonVenturaView" pc="268437166" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="12" lineNum="17" parent="globals/HamiltonVenturaView" pc="268437195" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="12" lineNum="18" parent="globals/HamiltonVenturaView" pc="268437197" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="14" lineNum="184" parent="globals/HamiltonVenturaView" pc="268437210" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawLogo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="14" lineNum="185" parent="globals/HamiltonVenturaView" pc="268437212" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawLogo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="26" parent="globals/HamiltonVenturaView" pc="268437230" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="28" parent="globals/HamiltonVenturaView" pc="268437232" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="29" parent="globals/HamiltonVenturaView" pc="268437244" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="32" parent="globals/HamiltonVenturaView" pc="268437252" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="35" parent="globals/HamiltonVenturaView" pc="268437263" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="38" parent="globals/HamiltonVenturaView" pc="268437274" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaView.mc" id="15" lineNum="41" parent="globals/HamiltonVenturaView" pc="268437285" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="16" lineNum="12" parent="globals/HamiltonVenturaApp" pc="268437297" symbol="onStart"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="17" lineNum="20" parent="globals/HamiltonVenturaApp" pc="268437300" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="17" lineNum="21" parent="globals/HamiltonVenturaApp" pc="268437302" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="18" lineNum="7" parent="globals/HamiltonVenturaApp" pc="268437328" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="18" lineNum="8" parent="globals/HamiltonVenturaApp" pc="268437330" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/source/HamiltonVenturaApp.mc" id="19" lineNum="16" parent="globals/HamiltonVenturaApp" pc="268437343" symbol="onStop"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/bin/gen/006-B4536-00/source/Rez.mcgen" id="20" lineNum="13" parent="globals/Rez/Layouts" pc="268437346" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/bin/gen/006-B4536-00/source/Rez.mcgen" id="20" lineNum="14" parent="globals/Rez/Layouts" pc="268437357" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminThree/HamiltonVentura/bin/gen/006-B4536-00/source/Rez.mcgen" id="20" lineNum="16" parent="globals/Rez/Layouts" pc="268437473" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="9" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_centerY&gt;"/>
+        <entry field="true" id="8" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_centerX&gt;"/>
+        <entry field="true" id="11" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_handColor&gt;"/>
+        <entry id="14" method="true" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;"/>
+        <entry id="18" method="true" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawShieldBackground&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="21" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="7" object="true" symbol="HamiltonVenturaView"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="10" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_electricBlue&gt;"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="12" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_secondHandColor&gt;"/>
+        <entry id="6" object="true" symbol="HamiltonVenturaApp"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="20" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="15" method="true" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry id="16" method="true" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;"/>
+        <entry id="17" method="true" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;drawLogo&gt;"/>
+        <entry id="19" module="true" symbol="Layouts"/>
+        <entry field="true" id="13" symbol="&lt;globals/HamiltonVenturaView/&lt;&gt;_shieldColor&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435561" name="dc" stackId="1" startPc="268435525"/>
+        <entry arg="true" endPc="268435583" name="dc" stackId="1" startPc="268435562"/>
+        <entry endPc="268435582" name="width" stackId="2" startPc="268435565"/>
+        <entry endPc="268435582" name="height" stackId="3" startPc="268435565"/>
+        <entry arg="true" endPc="268435924" name="dc" stackId="1" startPc="268435584"/>
+        <entry arg="true" endPc="268435924" name="angle" stackId="2" startPc="268435584"/>
+        <entry arg="true" endPc="268435924" name="length" stackId="3" startPc="268435584"/>
+        <entry arg="true" endPc="268435924" name="width" stackId="4" startPc="268435584"/>
+        <entry arg="true" endPc="268435924" name="color" stackId="5" startPc="268435584"/>
+        <entry endPc="268435923" name="cos" stackId="6" startPc="268435587"/>
+        <entry endPc="268435923" name="sin" stackId="7" startPc="268435587"/>
+        <entry endPc="268435923" name="xTip" stackId="8" startPc="268435587"/>
+        <entry endPc="268435923" name="yTip" stackId="9" startPc="268435587"/>
+        <entry endPc="268435923" name="backLen" stackId="10" startPc="268435587"/>
+        <entry endPc="268435923" name="xBack" stackId="11" startPc="268435587"/>
+        <entry endPc="268435923" name="yBack" stackId="12" startPc="268435587"/>
+        <entry endPc="268435923" name="xSide1" stackId="13" startPc="268435587"/>
+        <entry endPc="268435923" name="ySide1" stackId="14" startPc="268435587"/>
+        <entry endPc="268435923" name="xSide2" stackId="15" startPc="268435587"/>
+        <entry endPc="268435923" name="ySide2" stackId="16" startPc="268435587"/>
+        <entry endPc="268435923" name="points" stackId="17" startPc="268435587"/>
+        <entry arg="true" endPc="268436215" name="dc" stackId="1" startPc="268435925"/>
+        <entry endPc="268436214" name="clockTime" stackId="2" startPc="268435928"/>
+        <entry endPc="268436214" name="hour" stackId="3" startPc="268435928"/>
+        <entry endPc="268436214" name="min" stackId="4" startPc="268435928"/>
+        <entry endPc="268436214" name="sec" stackId="5" startPc="268435928"/>
+        <entry endPc="268436214" name="hourAngle" stackId="6" startPc="268435928"/>
+        <entry endPc="268436214" name="minAngle" stackId="7" startPc="268435928"/>
+        <entry endPc="268436214" name="secAngle" stackId="8" startPc="268435928"/>
+        <entry endPc="268436214" name="secRadius" stackId="9" startPc="268435928"/>
+        <entry endPc="268436214" name="x" stackId="10" startPc="268435928"/>
+        <entry endPc="268436214" name="y" stackId="11" startPc="268435928"/>
+        <entry arg="true" endPc="268437194" name="dc" stackId="1" startPc="268436216"/>
+        <entry endPc="268437193" name="r" stackId="2" startPc="268436219"/>
+        <entry endPc="268437193" name="circleX" stackId="3" startPc="268436219"/>
+        <entry endPc="268437193" name="circleY" stackId="4" startPc="268436219"/>
+        <entry endPc="268437193" name="circleRadius" stackId="5" startPc="268436219"/>
+        <entry endPc="268437193" name="startX" stackId="6" startPc="268436219"/>
+        <entry endPc="268437193" name="startY" stackId="7" startPc="268436219"/>
+        <entry endPc="268437193" name="topPts" stackId="8" startPc="268436219"/>
+        <entry endPc="268437193" name="markerRadius" stackId="9" startPc="268436219"/>
+        <entry endPc="268437193" name="markerLen" stackId="10" startPc="268436219"/>
+        <entry endPc="268437193" name="i" stackId="11" startPc="268437013"/>
+        <entry endPc="268437183" name="angle" stackId="12" startPc="268437013"/>
+        <entry endPc="268437183" name="x1" stackId="13" startPc="268437013"/>
+        <entry endPc="268437183" name="y1" stackId="14" startPc="268437013"/>
+        <entry endPc="268437183" name="x2" stackId="15" startPc="268437013"/>
+        <entry endPc="268437183" name="y2" stackId="16" startPc="268437013"/>
+        <entry arg="true" endPc="268437229" name="dc" stackId="1" startPc="268437210"/>
+        <entry arg="true" endPc="268437296" name="dc" stackId="1" startPc="268437230"/>
+        <entry arg="true" endPc="268437482" name="dc" stackId="1" startPc="268437346"/>
+        <entry endPc="268437482" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268437357"/>
+    </localVars>
+    <deviceInfo deviceVersion="5c7ae9cf907f88c116a91dc4ffd75be9b5b7d2e9" partNumber="006-B4536-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/HamiltonVenturaView" offset="125" parentId="globals" symbolId="HamiltonVenturaView" type="class"/>
+        <dataEntry label="globals/Rez" offset="313" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HamiltonVenturaApp" offset="366" parentId="globals" symbolId="HamiltonVenturaApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="437" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="472" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="507" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="HamiltonVenturaView" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="HamiltonVenturaApp" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="HamiltonVenturaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435561" name="onLayout" parent="HamiltonVenturaView" startPc="268435525">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435583" name="&lt;globals/HamiltonVenturaView/&lt;&gt;drawShieldBackground&gt;" parent="HamiltonVenturaView" startPc="268435562">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268435924" name="&lt;globals/HamiltonVenturaView/&lt;&gt;drawDauphineHand&gt;" parent="HamiltonVenturaView" startPc="268435584">
+            <param id="dc"/>
+            <param id="angle"/>
+            <param id="length"/>
+            <param id="width"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436215" name="&lt;globals/HamiltonVenturaView/&lt;&gt;drawHands&gt;" parent="HamiltonVenturaView" startPc="268435925">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="HamiltonVenturaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437194" name="&lt;globals/HamiltonVenturaView/&lt;&gt;drawCircuitLines&gt;" parent="HamiltonVenturaView" startPc="268436216">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437209" name="initialize" parent="HamiltonVenturaView" startPc="268437195">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="HamiltonVenturaView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437229" name="&lt;globals/HamiltonVenturaView/&lt;&gt;drawLogo&gt;" parent="HamiltonVenturaView" startPc="268437210">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437296" name="onUpdate" parent="HamiltonVenturaView" startPc="268437230">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437299" name="onStart" parent="HamiltonVenturaApp" startPc="268437297">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437327" name="getInitialView" parent="HamiltonVenturaApp" startPc="268437300">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437342" name="initialize" parent="HamiltonVenturaApp" startPc="268437328">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437345" name="onStop" parent="HamiltonVenturaApp" startPc="268437343">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437482" name="WatchFace" parent="Layouts" startPc="268437346">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
