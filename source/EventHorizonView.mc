@@ -274,22 +274,27 @@ class EventHorizonView extends WatchUi.WatchFace {
 
         // Draw Hour Hand
         // Dauphine style hands (triangular)
-        drawDauphineHand(dc, hourAngle, 60, 6, _handColor);
+        // drawDauphineHand(dc, hourAngle, 60, 6, _handColor); // ORIGINAL
+        drawDauphineHand(dc, hourAngle, 70, 8, _handColor); // MODIFIED: Increased size
 
         // Draw Minute Hand
-        drawDauphineHand(dc, minAngle, 90, 4, _handColor);
+        // drawDauphineHand(dc, minAngle, 90, 4, _handColor); // ORIGINAL
+        drawDauphineHand(dc, minAngle, 100, 6, _handColor); // MODIFIED: Increased size
 
         // Draw Second Hand
         // Thin line with a tip
         if (!inSleep) {
-            var secRadius = 90;
+            // var secRadius = 90; // ORIGINAL
+            var secRadius = 100; // MODIFIED: Increased size
             var x = _centerX + secRadius * Math.cos(secAngle);
             var y = _centerY + secRadius * Math.sin(secAngle);
             //dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.setPenWidth(2);
+            // dc.setPenWidth(2); // ORIGINAL
+            dc.setPenWidth(3); // MODIFIED: Increased size
             dc.drawLine(_centerX, _centerY, x, y);
-            dc.fillCircle(x, y, 3); // Tip
+            // dc.fillCircle(x, y, 3); // Tip // ORIGINAL
+            dc.fillCircle(x, y, 4); // Tip // MODIFIED: Increased size
         }
     }
 
