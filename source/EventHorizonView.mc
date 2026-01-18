@@ -33,8 +33,9 @@ class EventHorizonView extends WatchUi.WatchFace {
         dc.clear();
 
         if (_isInSleepMode) {
-            // In sleep mode, only draw the hands (no seconds)
-            drawHands(dc, true);
+            // In sleep mode, draw markers and hands (no seconds)
+            drawMarkers(dc);
+            drawHands(dc, true); // true = in sleep mode = no seconds
             return;
         }
 
@@ -229,7 +230,11 @@ class EventHorizonView extends WatchUi.WatchFace {
         // Connecting lines to the circle on the left
         dc.drawLine(_centerX - 50, _centerY - 15, circleX + circleRadius, _centerY - 5);
         dc.drawLine(_centerX - 50, _centerY + 15, circleX + circleRadius, _centerY + 5);
-        
+
+        drawMarkers(dc);
+    }
+
+    private function drawMarkers(dc as Dc) as Void {
         // 4. Hour Markers (Indices)
         // The image shows markers at 12, 1, 2, 4, 5, 6, 7, 8, 10, 11
         // They are simple white lines.
