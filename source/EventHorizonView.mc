@@ -59,26 +59,33 @@ class EventHorizonView extends WatchUi.WatchFace {
 
 
     private function drawConcentricBackground(dc as Dc) as Void {
-        // Couleurs du dégradé du plus foncé au plus clair
-        var colors = [
-            0x000510, // Centre: Bleu très très sombre
-            0x000A18,
-            0x001020,
-            0x001528,
-            0x001A30,
-            0x002038,
-            0x002540,
-            0x003048,
-            0x003550,
-            0x004060  // Extérieur: Bleu nuit plus clair
-        ];
+        var numRings = 40; // Increased for smoother gradient
         var maxRadius = _radius + 20;
-        var numRings = colors.size();
-        
-        // Dessiner les cercles concentriques du plus grand au plus petit
+
+        // Start Color (Center) - Darkest (0x000510)
+        var startR = 0;
+        var startG = 0x05;
+        var startB = 0x10;
+
+        // End Color (Outer) - Lightest (0x004060)
+        var endR = 0;
+        var endG = 0x40;
+        var endB = 0x60;
+
+        // Draw concentric circles from largest (outer) to smallest (inner)
         for (var i = numRings - 1; i >= 0; i--) {
+            var ratio = i.toFloat() / (numRings - 1);
+            
+            // Interpolate colors
+            var r = startR + (endR - startR) * ratio;
+            var g = startG + (endG - startG) * ratio;
+            var b = startB + (endB - startB) * ratio;
+            
+            var color = (r.toLong() << 16) | (g.toLong() << 8) | b.toLong();
+            
             var ringRadius = maxRadius * (i + 1) / numRings;
-            dc.setColor(colors[i], Graphics.COLOR_TRANSPARENT);
+            
+            dc.setColor(color.toNumber(), Graphics.COLOR_TRANSPARENT);
             dc.fillCircle(_centerX, _centerY, ringRadius);
         }
     }
