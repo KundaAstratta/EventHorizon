@@ -12,7 +12,7 @@ class EventHorizonView extends WatchUi.WatchFace {
     private var _radius as Number = 0;
     private var _electricBlue as Number = 0x00FFFF; // Cyan/Electric Blue
     private var _shieldColor as Number = 0x000000; // Black
-    private var _handColor as Number = 0xAAAAAA; // Silver/Grey
+    private var _handColor as Number = 0xFFFFFF; // White
     private var _secondHandColor as Number = 0x00FFFF; // Electric Blue tip? Or just silver. Let's go with silver/grey for main, blue tip maybe.
     private var _isInSleepMode as Boolean = false;
 
@@ -170,7 +170,7 @@ class EventHorizonView extends WatchUi.WatchFace {
     }
 
     private function drawCircuitLines(dc as Dc) as Void {
-        dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(0x007799, Graphics.COLOR_TRANSPARENT); // Teal foncé (différencié du cyan des aiguilles)
         dc.setPenWidth(3);
 
         // The pattern in the image:
@@ -315,46 +315,58 @@ class EventHorizonView extends WatchUi.WatchFace {
     }
 
     private function drawDauphineHand(dc as Dc, angle as Float, length as Number, width as Number, color as Number) as Void {
-        dc.setColor(color, Graphics.COLOR_TRANSPARENT);
-        
-        // Calculate polygon points for a diamond/dauphine shape
-        // Center, Tip, Back-Left, Back-Right
         var cos = Math.cos(angle);
         var sin = Math.sin(angle);
-        
-        // Tip
-        var xTip = _centerX + length * cos;
-        var yTip = _centerY + length * sin;
-        
-        // Base (slightly behind center)
         var backLen = 15;
+        var glowMargin = 4;
+        var sepMargin = 8;
+
+        // --- Option C : Anneau sombre isolant (sépare l'aiguille du fond cyan) ---
+        dc.setColor(0x000A18, Graphics.COLOR_TRANSPARENT);
+        dc.fillPolygon([
+            [_centerX + (length + sepMargin) * cos,          _centerY + (length + sepMargin) * sin],
+            [_centerX + (width  + sepMargin) * Math.sin(angle), _centerY - (width  + sepMargin) * Math.cos(angle)],
+            [_centerX - (backLen + sepMargin) * cos,         _centerY - (backLen + sepMargin) * sin],
+            [_centerX - (width  + sepMargin) * Math.sin(angle), _centerY + (width  + sepMargin) * Math.cos(angle)]
+        ]);
+
+        // --- Idée B : Halo bleu électrique (polygone agrandi) ---
+        var xTipG  = _centerX + (length + glowMargin) * cos;
+        var yTipG  = _centerY + (length + glowMargin) * sin;
+        var xBackG = _centerX - (backLen + glowMargin) * cos;
+        var yBackG = _centerY - (backLen + glowMargin) * sin;
+        var xS1G   = _centerX + (width + glowMargin) * Math.sin(angle);
+        var yS1G   = _centerY - (width + glowMargin) * Math.cos(angle);
+        var xS2G   = _centerX - (width + glowMargin) * Math.sin(angle);
+        var yS2G   = _centerY + (width + glowMargin) * Math.cos(angle);
+
+        dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
+        dc.fillPolygon([[xTipG, yTipG], [xS1G, yS1G], [xBackG, yBackG], [xS2G, yS2G]]);
+
+        // --- Idée A : Corps principal blanc ---
+        var xTip  = _centerX + length * cos;
+        var yTip  = _centerY + length * sin;
         var xBack = _centerX - backLen * cos;
         var yBack = _centerY - backLen * sin;
-        
-        // Side points (perpendicular to angle)
-        var xSide1 = _centerX + width * Math.sin(angle);
-        var ySide1 = _centerY - width * Math.cos(angle);
-        var xSide2 = _centerX - width * Math.sin(angle);
-        var ySide2 = _centerY + width * Math.cos(angle);
-        
-        var points = [
-            [xTip, yTip],
-            [xSide1, ySide1],
-            [xBack, yBack],
-            [xSide2, ySide2]
-        ];
-        
-        dc.fillPolygon(points);
-        
-        // Draw a thin line around the hand for a relief effect
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        var xS1   = _centerX + width * Math.sin(angle);
+        var yS1   = _centerY - width * Math.cos(angle);
+        var xS2   = _centerX - width * Math.sin(angle);
+        var yS2   = _centerY + width * Math.cos(angle);
+
+        dc.setColor(color, Graphics.COLOR_TRANSPARENT);
+        dc.fillPolygon([[xTip, yTip], [xS1, yS1], [xBack, yBack], [xS2, yS2]]);
+
+        // --- Contour bleu nuit (profondeur, remplace le noir) ---
+        dc.setColor(0x001830, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(1);
-        dc.drawLine(xTip, yTip, xSide1, ySide1);
-        dc.drawLine(xSide1, ySide1, xBack, yBack);
-        dc.drawLine(xBack, yBack, xSide2, ySide2);
-        dc.drawLine(xSide2, ySide2, xTip, yTip);
-        
-        // Draw a central line extending to the back to complete the 3D prism look
+        dc.drawLine(xTip, yTip, xS1, yS1);
+        dc.drawLine(xS1, yS1, xBack, yBack);
+        dc.drawLine(xBack, yBack, xS2, yS2);
+        dc.drawLine(xS2, yS2, xTip, yTip);
+
+        // --- Idée A : Arête centrale en bleu électrique (effet prisme lumineux) ---
+        dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
         dc.drawLine(xBack, yBack, xTip, yTip);
     }
 
