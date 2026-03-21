@@ -10,6 +10,9 @@ class EventHorizonView extends WatchUi.WatchFace {
     private var _centerX as Number = 0;
     private var _centerY as Number = 0;
     private var _radius as Number = 0;
+    private var _dialX as Number = 0; // Pivot des aiguilles (décalé = asymétrie)
+    private var _dialY as Number = 0;
+    private var _shadowWidth as Number = 0; // Largeur en pixels de la zone d'ombre (effet lune)
     private var _electricBlue as Number = 0x00FFFF; // Cyan/Electric Blue
     private var _shieldColor as Number = 0x000000; // Black
     private var _handColor as Number = 0xFFFFFF; // White
@@ -24,7 +27,11 @@ class EventHorizonView extends WatchUi.WatchFace {
         _centerX = dc.getWidth() / 2;
         _centerY = dc.getHeight() / 2;
         _radius = (_centerX < _centerY ? _centerX : _centerY) - 20;
-
+        // Pivot décalé vers 7h30 pour l'asymétrie (Option B)
+        _dialX = _centerX - 38;
+        _dialY = _centerY + 32;
+        // Ombre lunaire : décalage proportionnel au décentrage du pivot
+        _shadowWidth = 55; // Largeur exacte en pixels de la zone d'ombre sur le bord droit
     }
 
     function onUpdate(dc as Dc) as Void {
@@ -47,7 +54,13 @@ class EventHorizonView extends WatchUi.WatchFace {
         // Draw the Shield Shape
         drawShieldBackground(dc);
 
-        // Draw the Electric Blue Circuit Lines
+        // Draw Moon Shadow (sous le circuit et les marqueurs pour qu'ils restent visibles)
+        drawMoonShadow(dc);
+
+        // Draw Singularity Rings — anneaux de l'horizon des événements dans la zone noire
+        drawSingularityRings(dc);
+
+        // Draw the Electric Blue Circuit Lines + Markers (par-dessus l'ombre)
         drawCircuitLines(dc);
 
         // Draw the Logo
@@ -62,15 +75,14 @@ class EventHorizonView extends WatchUi.WatchFace {
         var numRings = 40; // Increased for smoother gradient
         var maxRadius = _radius + 20;
 
-        // Start Color (Center) - Darkest (0x000510)
-        var startR = 0;
-        var startG = 0x05;
-        var startB = 0x10;
+        // Opalin : centre plus clair, bords plus sombres
+        var startR = 0;      // centre
+        var startG = 0x40;
+        var startB = 0x60;
 
-        // End Color (Outer) - Lightest (0x004060)
-        var endR = 0;
-        var endG = 0x40;
-        var endB = 0x60;
+        var endR = 0;        // bord extérieur
+        var endG = 0x05;
+        var endB = 0x10;
 
         // Draw concentric circles from largest (outer) to smallest (inner)
         for (var i = numRings - 1; i >= 0; i--) {
@@ -89,6 +101,7 @@ class EventHorizonView extends WatchUi.WatchFace {
             dc.fillCircle(_centerX, _centerY, ringRadius);
         }
     }
+
 
     private function drawStarField(dc as Dc) as Void {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -120,6 +133,94 @@ class EventHorizonView extends WatchUi.WatchFace {
         }
     }
 
+
+    private function drawSingularityRings(dc as Dc) as Void {
+        // Singularité décentrée : tension asymétrique dans la zone noire
+        var sw = _shadowWidth.toFloat();
+        var sx = (_centerX + _radius).toFloat() - sw * 0.45;
+        var sy = _centerY.toFloat() - sw * 0.35;
+
+        // Étape 2 — Radii adaptatifs proportionnels à _shadowWidth
+        // [0.08, 0.17, 0.27, 0.38, 0.52, 0.68] × _shadowWidth
+        var r1 = (sw * 0.08).toNumber();
+        var r2 = (sw * 0.17).toNumber();
+        var r3 = (sw * 0.27).toNumber(); // disque d'accrétion
+        var r4 = (sw * 0.38).toNumber();
+        var r5 = (sw * 0.52).toNumber(); // arc partiel
+        var r6 = (sw * 0.68).toNumber(); // arc partiel
+
+        var sxi = sx.toNumber();
+        var syi = sy.toNumber();
+
+        // Étape 4 — Anneaux intérieurs complets avec épaisseur variable
+        dc.setPenWidth(1);
+        dc.setColor(0x009999, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(sxi, syi, r1);
+
+        dc.setColor(0x007777, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(sxi, syi, r2);
+
+        // Étape 3 — Disque d'accrétion lumineux (~27% du rayon max)
+        dc.setColor(0x00DDDD, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(3);
+        dc.drawCircle(sxi, syi, r3);
+
+        dc.setPenWidth(2);
+        dc.setColor(0x009999, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(sxi, syi, r3 + 2);
+
+        // Anneau intermédiaire complet
+        dc.setPenWidth(1);
+        dc.setColor(0x004444, Graphics.COLOR_TRANSPARENT);
+        dc.drawCircle(sxi, syi, r4);
+
+        // Étape 5 — Anneaux partiels : seule la moitié droite tracée
+        // Simule la lumière qui disparaît derrière le terminateur (côté gauche coupé)
+        dc.setColor(0x002828, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
+        dc.drawArc(sxi, syi, r5, Graphics.ARC_CLOCKWISE, 300, 60);
+
+        dc.setColor(0x001818, Graphics.COLOR_TRANSPARENT);
+        dc.drawArc(sxi, syi, r6, Graphics.ARC_CLOCKWISE, 320, 40);
+
+        // Singularité centrale : point noir absolu
+        dc.setColor(0x000000, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(sxi, syi, (sw * 0.05).toNumber());
+    }
+
+    private function drawMoonShadow(dc as Dc) as Void {
+        // Ombre lunaire pixel-exact + effet de flou au terminateur.
+        // Formule : offset = 2 * (_radius - width) place le terminateur à exactement 'width' px du bord.
+        var r = _radius;
+        var blurSpan = 30; // largeur de la zone de transition en pixels
+
+        // --- ORDRE CORRECT : pénombre EN PREMIER, ombre noire PAR-DESSUS ---
+
+        // Pénombre : 8 passes du fond bleu vers le noir.
+        // Colors : partent proches du fond (~0x003050) et descendent vers le noir.
+        // Dessinées AVANT le noir pour être visibles dans la zone bleue.
+        var blurColors = [
+            0x003050, 0x002840, 0x002030, 0x001828,
+            0x001020, 0x000818, 0x000410, 0x000208
+        ];
+
+        for (var i = 0; i < 8; i++) {
+            // blurW : de _shadowWidth+blurSpan (loin dans le bleu) → _shadowWidth (terminateur)
+            var blurW = _shadowWidth + blurSpan - (i * blurSpan / 7);
+            dc.setColor(blurColors[i], Graphics.COLOR_TRANSPARENT);
+            dc.fillCircle(_centerX + 2 * (r - blurW), _centerY, r);
+        }
+
+        // Zone noire principale (dessinée APRÈS le flou, par-dessus)
+        dc.setColor(0x000810, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_centerX + 2 * (r - _shadowWidth),            _centerY, r);
+
+        dc.setColor(0x000408, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_centerX + 2 * (r - _shadowWidth * 65 / 100), _centerY, r);
+
+        dc.setColor(0x000000, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_centerX + 2 * (r - _shadowWidth * 35 / 100), _centerY, r);
+    }
 
     private function drawShieldBackground(dc as Dc) as Void {
         // The Ventura shape is a triangle with curved sides.
@@ -186,91 +287,80 @@ class EventHorizonView extends WatchUi.WatchFace {
         // Image shows: A circle at 9 o'clock.
         // Then lines extending to the right.
         
-        var r = _centerX; // radius
-        
-        // 1. The Circle at 9 o'clock
-        var circleX = _centerX - r * 0.5;
-        var circleY = _centerY;
+        var r = _centerX; // radius (taille de référence, pas une position)
+
+        // 1. The Circle at 9 o'clock — décalé avec le pivot
+        var circleX = _dialX - r * 0.5;
+        var circleY = _dialY;
         var circleRadius = r * 0.15;
-        
+
         dc.setPenWidth(3);
         dc.drawCircle(circleX, circleY, circleRadius);
         dc.fillCircle(circleX, circleY, circleRadius * 0.4); // Inner dot
-        
+
         // 2. Arcs around it
         dc.drawArc(circleX, circleY, circleRadius * 1.5, Graphics.ARC_COUNTER_CLOCKWISE, 270, 90);
         dc.drawArc(circleX, circleY, circleRadius * 2.0, Graphics.ARC_COUNTER_CLOCKWISE, 250, 110);
-        
-        // 3. The "Wings" / Lines extending to the right
-        // Top Wing
-        var startX = circleX + circleRadius * 1.5; // Approximate
-        var startY = circleY - circleRadius * 1.0;
-        
-        // Draw a shape that looks like the top trapezoid/wing
-        // Lines: Start near 9 o'clock, go up-right, then right, then down-right?
-        // Let's try to draw the outline of the blue shapes.
-        
-        // Top Shape
-        var topPts = [
-            [(_centerX - 40), (_centerY - 10)],
-            [(_centerX - 20), (_centerY - 60)],
-            [(_centerX + 60), (_centerY - 50)],
-            [(_centerX + 80), (_centerY - 10)]
-        ];
-        // This is hard to guess coordinates. I'll make a symmetric pattern.
-        
-        // Let's try to replicate the image's "Electric" feel.
-        // It has a horizontal symmetry axis (roughly).
-        
-        // Top Blue Loop
-        dc.drawLine(_centerX - 50, _centerY - 15, _centerX - 40, _centerY - 60); // Left up
-        dc.drawLine(_centerX - 40, _centerY - 60, _centerX + 60, _centerY - 50); // Top across
-        dc.drawLine(_centerX + 60, _centerY - 50, _centerX + 50, _centerY - 15); // Right down
-        dc.drawLine(_centerX + 50, _centerY - 15, _centerX - 50, _centerY - 15); // Bottom across (close loop)
-        
+
+        // 3. Top Blue Loop — décalé avec le pivot
+        dc.drawLine(_dialX - 50, _dialY - 15, _dialX - 40, _dialY - 60); // Left up
+        dc.drawLine(_dialX - 40, _dialY - 60, _dialX + 60, _dialY - 50); // Top across
+        dc.drawLine(_dialX + 60, _dialY - 50, _dialX + 50, _dialY - 15); // Right down
+        dc.drawLine(_dialX + 50, _dialY - 15, _dialX - 50, _dialY - 15); // Bottom across (close loop)
+
         // Bottom Blue Loop (Mirrored)
-        dc.drawLine(_centerX - 50, _centerY + 15, _centerX - 40, _centerY + 60); 
-        dc.drawLine(_centerX - 40, _centerY + 60, _centerX + 60, _centerY + 50); 
-        dc.drawLine(_centerX + 60, _centerY + 50, _centerX + 50, _centerY + 15); 
-        dc.drawLine(_centerX + 50, _centerY + 15, _centerX - 50, _centerY + 15); 
-        
+        dc.drawLine(_dialX - 50, _dialY + 15, _dialX - 40, _dialY + 60);
+        dc.drawLine(_dialX - 40, _dialY + 60, _dialX + 60, _dialY + 50);
+        dc.drawLine(_dialX + 60, _dialY + 50, _dialX + 50, _dialY + 15);
+        dc.drawLine(_dialX + 50, _dialY + 15, _dialX - 50, _dialY + 15);
+
         // Connecting lines to the circle on the left
-        dc.drawLine(_centerX - 50, _centerY - 15, circleX + circleRadius, _centerY - 5);
-        dc.drawLine(_centerX - 50, _centerY + 15, circleX + circleRadius, _centerY + 5);
+        dc.drawLine(_dialX - 50, _dialY - 15, circleX + circleRadius, _dialY - 5);
+        dc.drawLine(_dialX - 50, _dialY + 15, circleX + circleRadius, _dialY + 5);
 
         drawMarkers(dc);
     }
 
     private function drawMarkers(dc as Dc) as Void {
-        // 4. Hour Markers (Indices)
-        // The image shows markers at 12, 1, 2, 4, 5, 6, 7, 8, 10, 11
-        // They are simple white lines.
+        // Marqueurs répartis en cercle autour du pivot décalé (_dialX/_dialY),
+        // cohérent avec le centre de rotation des aiguilles.
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
-        var markerRadius = _centerX * 0.9;
-        var markerLen = 15;
-        
+        var markerRadius = _radius.toFloat() * 0.88;
+        var markerLen    = 15;
+
         for (var i = 0; i < 12; i++) {
-            // Skip 3 and 9 if they are covered by design? 
-            // Image shows 9 is covered by the circle. 3 is the point of the shield?
-            if (i == 3 || i == 9) { continue; }
-            
+            if (i == 3 || i == 9) { continue; } // 3h et 9h supprimés
+
             var angle = (i / 12.0) * Math.PI * 2 - Math.PI / 2;
-            var x1 = _centerX + markerRadius * Math.cos(angle);
-            var y1 = _centerY + markerRadius * Math.sin(angle);
-            var x2 = _centerX + (markerRadius - markerLen) * Math.cos(angle);
-            var y2 = _centerY + (markerRadius - markerLen) * Math.sin(angle);
-            
-            dc.drawLine(x1, y1, x2, y2);
+            var cosA  = Math.cos(angle);
+            var sinA  = Math.sin(angle);
+
+            dc.drawLine(
+                _dialX + markerRadius * cosA,              _dialY + markerRadius * sinA,
+                _dialX + (markerRadius - markerLen) * cosA, _dialY + (markerRadius - markerLen) * sinA
+            );
         }
     }
 
     private function drawLogo(dc as Dc) as Void {
+        // Placé dans l'espace haut-droite libéré par l'asymétrie du pivot
+        dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(
+            _centerX + 24,
+            _centerY - 30,
+            Graphics.FONT_XTINY,
+            "EVENT",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        // "HAMILTON" text on the right side, centered vertically between the blue loops?
-        // In the image, it's centered in the middle right.
-        
-        //dc.drawText(_centerX + 20, _centerY, Graphics.FONT_XTINY, "HAMILTON", Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(
+            _centerX + 24,
+            _centerY - 16,
+            Graphics.FONT_XTINY,
+            "HORIZON",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+        );
     }
 
     private function drawHands(dc as Dc, inSleep as Boolean) as Void {
@@ -293,23 +383,31 @@ class EventHorizonView extends WatchUi.WatchFace {
         // drawDauphineHand(dc, minAngle, 90, 4, _handColor); // ORIGINAL
         drawDauphineHand(dc, minAngle, 120, 8, _handColor); // MODIFIED: Increased size
 
+        // Chaton de pivot — cercle en bleu électrique sur le point de pivot décalé
+        dc.setColor(0x001830, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_dialX, _dialY, 7);
+        dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_dialX, _dialY, 5);
+        dc.setColor(0x000A18, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(_dialX, _dialY, 2);
+
         // Draw Second Hand
         // Thin line with a tip
         if (!inSleep) {
             var secRadius = 130; // MODIFIED: Increased size
-            var x = _centerX + secRadius * Math.cos(secAngle);
-            var y = _centerY + secRadius * Math.sin(secAngle);
-            
+            var x = _dialX + secRadius * Math.cos(secAngle);
+            var y = _dialY + secRadius * Math.sin(secAngle);
+
             // Outline for relief effect
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
             dc.setPenWidth(5);
-            dc.drawLine(_centerX, _centerY, x, y);
+            dc.drawLine(_dialX, _dialY, x, y);
             dc.fillCircle(x, y, 5);
-            
+
             // Inner line
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.setPenWidth(3); // MODIFIED: Increased size
-            dc.drawLine(_centerX, _centerY, x, y);
+            dc.drawLine(_dialX, _dialY, x, y);
             dc.fillCircle(x, y, 4); // Tip // MODIFIED: Increased size
         }
     }
@@ -324,34 +422,34 @@ class EventHorizonView extends WatchUi.WatchFace {
         // --- Option C : Anneau sombre isolant (sépare l'aiguille du fond cyan) ---
         dc.setColor(0x000A18, Graphics.COLOR_TRANSPARENT);
         dc.fillPolygon([
-            [_centerX + (length + sepMargin) * cos,          _centerY + (length + sepMargin) * sin],
-            [_centerX + (width  + sepMargin) * Math.sin(angle), _centerY - (width  + sepMargin) * Math.cos(angle)],
-            [_centerX - (backLen + sepMargin) * cos,         _centerY - (backLen + sepMargin) * sin],
-            [_centerX - (width  + sepMargin) * Math.sin(angle), _centerY + (width  + sepMargin) * Math.cos(angle)]
+            [_dialX + (length + sepMargin) * cos,          _dialY + (length + sepMargin) * sin],
+            [_dialX + (width  + sepMargin) * Math.sin(angle), _dialY - (width  + sepMargin) * Math.cos(angle)],
+            [_dialX - (backLen + sepMargin) * cos,         _dialY - (backLen + sepMargin) * sin],
+            [_dialX - (width  + sepMargin) * Math.sin(angle), _dialY + (width  + sepMargin) * Math.cos(angle)]
         ]);
 
         // --- Idée B : Halo bleu électrique (polygone agrandi) ---
-        var xTipG  = _centerX + (length + glowMargin) * cos;
-        var yTipG  = _centerY + (length + glowMargin) * sin;
-        var xBackG = _centerX - (backLen + glowMargin) * cos;
-        var yBackG = _centerY - (backLen + glowMargin) * sin;
-        var xS1G   = _centerX + (width + glowMargin) * Math.sin(angle);
-        var yS1G   = _centerY - (width + glowMargin) * Math.cos(angle);
-        var xS2G   = _centerX - (width + glowMargin) * Math.sin(angle);
-        var yS2G   = _centerY + (width + glowMargin) * Math.cos(angle);
+        var xTipG  = _dialX + (length + glowMargin) * cos;
+        var yTipG  = _dialY + (length + glowMargin) * sin;
+        var xBackG = _dialX - (backLen + glowMargin) * cos;
+        var yBackG = _dialY - (backLen + glowMargin) * sin;
+        var xS1G   = _dialX + (width + glowMargin) * Math.sin(angle);
+        var yS1G   = _dialY - (width + glowMargin) * Math.cos(angle);
+        var xS2G   = _dialX - (width + glowMargin) * Math.sin(angle);
+        var yS2G   = _dialY + (width + glowMargin) * Math.cos(angle);
 
         dc.setColor(_electricBlue, Graphics.COLOR_TRANSPARENT);
         dc.fillPolygon([[xTipG, yTipG], [xS1G, yS1G], [xBackG, yBackG], [xS2G, yS2G]]);
 
         // --- Idée A : Corps principal blanc ---
-        var xTip  = _centerX + length * cos;
-        var yTip  = _centerY + length * sin;
-        var xBack = _centerX - backLen * cos;
-        var yBack = _centerY - backLen * sin;
-        var xS1   = _centerX + width * Math.sin(angle);
-        var yS1   = _centerY - width * Math.cos(angle);
-        var xS2   = _centerX - width * Math.sin(angle);
-        var yS2   = _centerY + width * Math.cos(angle);
+        var xTip  = _dialX + length * cos;
+        var yTip  = _dialY + length * sin;
+        var xBack = _dialX - backLen * cos;
+        var yBack = _dialY - backLen * sin;
+        var xS1   = _dialX + width * Math.sin(angle);
+        var yS1   = _dialY - width * Math.cos(angle);
+        var xS2   = _dialX - width * Math.sin(angle);
+        var yS2   = _dialY + width * Math.cos(angle);
 
         dc.setColor(color, Graphics.COLOR_TRANSPARENT);
         dc.fillPolygon([[xTip, yTip], [xS1, yS1], [xBack, yBack], [xS2, yS2]]);
