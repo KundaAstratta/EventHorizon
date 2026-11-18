@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Artefacts de build Connect IQ (régénérés par le compilateur)
+bin/gen/
+bin/internal-mir/
+bin/mir/
+*.prg
+*.prg.debug.xml
+
+# Python (tests de référence)
+__pycache__/
+.pytest_cache/
